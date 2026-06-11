@@ -1,0 +1,1557 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>StackTech | Websites That Generate Revenue — Mombasa, Kenya</title>
+<meta name="description" content="StackTech engineers websites and digital platforms that generate real revenue for Kenyan businesses. AI-powered audits, instant quotes, client portal, and proven results."/>
+<meta property="og:title" content="StackTech | Digital Platforms That Generate Revenue"/>
+<meta name="theme-color" content="#050507"/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,300;12..96,400;12..96,600;12..96,700;12..96,800&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap" rel="stylesheet"/>
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<style>
+/* ═══════════════════════════════════
+   TOKENS
+═══════════════════════════════════ */
+:root{
+  --bg:#050507; --bg2:#09090D; --sf:#0D0E13; --card:#12131A; --card2:#181920;
+  --b1:#1C1E2A; --b2:#262840;
+  --v:#C8FF00; --vd:#9EC500; --vg:rgba(200,255,0,.14);
+  --o:#FF6B2B; --cy:#00D9FF; --pu:#8B5CF6;
+  --w:#F1F3FF; --m:#6B7280; --m2:#9CA3B0;
+  --hd:'Bricolage Grotesque',sans-serif;
+  --bd:'Plus Jakarta Sans',sans-serif;
+  --r:12px; --r2:20px; --r3:28px;
+  --sh:0 0 80px rgba(200,255,0,.1);
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--w);font-family:var(--bd);overflow-x:hidden;line-height:1.7}
+::selection{background:var(--v);color:#000}
+a{color:inherit;text-decoration:none}
+img{display:block;max-width:100%}
+button{font-family:var(--bd);cursor:pointer}
+::-webkit-scrollbar{width:3px}
+::-webkit-scrollbar-track{background:var(--bg)}
+::-webkit-scrollbar-thumb{background:var(--vd);border-radius:3px}
+body::after{content:'';position:fixed;inset:0;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.75' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.03'/%3E%3C/svg%3E");pointer-events:none;z-index:9999;mix-blend-mode:screen}
+
+/* PROGRESS */
+#pb{position:fixed;top:0;left:0;height:2px;background:var(--v);z-index:10000;width:0;transition:width .15s}
+
+/* ═══════════════════════════════════
+   URGENCY FLASH BANNER
+═══════════════════════════════════ */
+#flash{
+  background:linear-gradient(90deg,rgba(255,107,43,.15),rgba(200,255,0,.1),rgba(255,107,43,.15));
+  border-bottom:1px solid rgba(255,107,43,.3);
+  padding:.6rem 5%;display:flex;align-items:center;justify-content:center;gap:1.5rem;
+  font-size:.8rem;position:relative;animation:flashPulse 3s ease infinite;
+}
+@keyframes flashPulse{0%,100%{background:linear-gradient(90deg,rgba(255,107,43,.15),rgba(200,255,0,.1),rgba(255,107,43,.15))}50%{background:linear-gradient(90deg,rgba(200,255,0,.1),rgba(255,107,43,.18),rgba(200,255,0,.1))}}
+#flash .fl-text{display:flex;align-items:center;gap:.75rem;flex-wrap:wrap;justify-content:center}
+#flash b{color:var(--v)}
+#flash .fl-timer{display:flex;gap:.4rem;align-items:center}
+.fl-unit{background:rgba(0,0,0,.4);border:1px solid var(--b2);border-radius:6px;padding:.15rem .5rem;font-family:var(--hd);font-weight:700;font-size:.82rem;min-width:28px;text-align:center;color:var(--o)}
+.fl-close{position:absolute;right:1.5rem;top:50%;transform:translateY(-50%);background:none;border:none;color:var(--m);font-size:1rem;transition:color .2s}
+.fl-close:hover{color:var(--w)}
+
+/* ═══════════════════════════════════
+   NAV
+═══════════════════════════════════ */
+#nav{position:fixed;top:2.6rem;left:0;right:0;z-index:500;display:flex;align-items:center;justify-content:space-between;padding:1rem 5%;transition:all .4s;border-bottom:1px solid transparent}
+#nav.solid{background:rgba(5,5,7,.93);border-color:var(--b1);backdrop-filter:blur(24px) saturate(200%);top:0}
+body.no-flash #nav{top:0}
+.nl{font-family:var(--hd);font-weight:800;font-size:1.3rem;letter-spacing:-.03em;display:flex;align-items:center;gap:.4rem}
+.nl em{color:var(--v);font-style:normal}
+.nl .dot{width:6px;height:6px;background:var(--v);border-radius:50%;box-shadow:0 0 8px var(--v);animation:blink 2s infinite}
+@keyframes blink{0%,100%{opacity:1}50%{opacity:.2}}
+.nav-ul{display:flex;list-style:none;gap:1.6rem}
+.nav-ul a{font-size:.85rem;font-weight:500;color:var(--m2);transition:color .2s;position:relative;padding-bottom:2px}
+.nav-ul a:hover,.nav-ul a.act{color:var(--w)}
+.nav-ul a.act::after{content:'';position:absolute;bottom:-2px;left:0;right:0;height:1.5px;background:var(--v);border-radius:1px}
+.nav-r{display:flex;align-items:center;gap:.75rem}
+.ham{display:none;flex-direction:column;gap:5px;padding:6px;background:none;border:none}
+.ham span{width:22px;height:1.5px;background:var(--w);border-radius:2px;transition:.3s;display:block}
+.mob-m{position:fixed;inset:0;background:var(--bg);z-index:700;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2rem;opacity:0;pointer-events:none;transition:opacity .3s}
+.mob-m.on{opacity:1;pointer-events:all}
+.mob-m a{font-family:var(--hd);font-size:1.7rem;font-weight:700;color:var(--m2);transition:color .2s}
+.mob-m a:hover{color:var(--v)}
+.mob-x{position:absolute;top:1.5rem;right:5%;background:var(--card);border:1px solid var(--b1);border-radius:10px;width:40px;height:40px;display:flex;align-items:center;justify-content:center;color:var(--w);font-size:1.1rem}
+
+/* ═══════════════════════════════════
+   BUTTONS
+═══════════════════════════════════ */
+.btn{display:inline-flex;align-items:center;gap:.55rem;padding:.82rem 1.7rem;border-radius:99px;font-family:var(--hd);font-weight:700;font-size:.9rem;border:none;transition:all .22s;white-space:nowrap;line-height:1}
+.bv{background:var(--v);color:#000}.bv:hover{transform:translateY(-2px);box-shadow:0 12px 40px var(--vg)}
+.bg{background:transparent;color:var(--w);border:1.5px solid var(--b2)}.bg:hover{border-color:var(--v);background:rgba(200,255,0,.05)}
+.bo{background:var(--o);color:#fff}.bo:hover{transform:translateY(-2px);box-shadow:0 12px 30px rgba(255,107,43,.28)}
+.bs{font-size:.82rem;padding:.6rem 1.2rem}
+.bl{font-size:1rem;padding:1rem 2rem}
+.btn-full{width:100%;justify-content:center}
+
+/* ═══════════════════════════════════
+   HERO
+═══════════════════════════════════ */
+#hero{min-height:100vh;display:flex;align-items:center;padding:11rem 5% 7rem;position:relative;overflow:hidden}
+.hero-mesh{position:absolute;inset:0;pointer-events:none;background:radial-gradient(ellipse 70% 55% at 65% 42%,rgba(200,255,0,.07) 0%,transparent 65%),radial-gradient(ellipse 40% 45% at 5% 90%,rgba(0,217,255,.04) 0%,transparent 55%),radial-gradient(ellipse 30% 35% at 95% 15%,rgba(139,92,246,.04) 0%,transparent 50%)}
+.hero-dots{position:absolute;inset:0;pointer-events:none;background-image:radial-gradient(rgba(255,255,255,.045) 1px,transparent 1px);background-size:40px 40px;mask-image:radial-gradient(ellipse 80% 70% at 50% 50%,black,transparent 80%)}
+.hero-ring{position:absolute;right:-8%;top:50%;transform:translateY(-50%);width:min(580px,50vw);aspect-ratio:1;pointer-events:none}
+.hero-ring::before,.hero-ring::after,.hero-ring .r3{content:'';position:absolute;border-radius:50%;border:1px solid;animation:spin 20s linear infinite}
+.hero-ring::before{inset:0;border-color:rgba(200,255,0,.12)}
+.hero-ring::after{inset:18%;border-color:rgba(0,217,255,.09);animation-duration:14s;animation-direction:reverse}
+.hero-ring .r3{position:absolute;inset:36%;border-color:rgba(139,92,246,.08);animation-duration:9s}
+@keyframes spin{to{transform:rotate(360deg)}}
+.hero-c{max-width:780px;position:relative;z-index:2}
+.hero-badge{display:inline-flex;align-items:center;gap:.6rem;background:rgba(200,255,0,.08);border:1px solid rgba(200,255,0,.2);color:var(--v);padding:.38rem 1.1rem;border-radius:99px;font-size:.74rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;margin-bottom:2rem;animation:fu .6s ease both}
+.hero-badge .bd{width:7px;height:7px;background:var(--v);border-radius:50%;box-shadow:0 0 10px var(--v);animation:blink 2s infinite;flex-shrink:0}
+h1.hero-h{font-family:var(--hd);font-size:clamp(3rem,6.8vw,5.8rem);font-weight:800;line-height:1.0;letter-spacing:-.04em;animation:fu .6s .1s ease both}
+h1.hero-h .hl{position:relative;display:inline-block}
+h1.hero-h .hl::after{content:'';position:absolute;left:0;right:0;bottom:-5px;height:2.5px;background:linear-gradient(90deg,var(--v),transparent);border-radius:2px}
+#tw{color:var(--v)}
+#cr{display:inline-block;width:3px;height:.88em;background:var(--v);margin-left:3px;vertical-align:text-bottom;animation:curb .8s step-end infinite}
+@keyframes curb{0%,100%{opacity:1}50%{opacity:0}}
+.hero-sub{font-size:1.07rem;color:var(--m2);max-width:560px;line-height:1.82;margin:1.8rem 0 2.8rem;animation:fu .6s .22s ease both}
+.hero-acts{display:flex;gap:1rem;flex-wrap:wrap;animation:fu .6s .34s ease both}
+.hero-proof{display:flex;align-items:center;gap:2rem;flex-wrap:wrap;margin-top:3.5rem;padding-top:2.25rem;border-top:1px solid var(--b1);animation:fu .6s .46s ease both}
+.avs{display:flex}.avs span{width:34px;height:34px;border-radius:50%;border:2px solid var(--bg);margin-left:-8px;background:linear-gradient(135deg,var(--v),var(--cy));display:flex;align-items:center;justify-content:center;font-family:var(--hd);font-weight:800;font-size:.7rem;color:#000;flex-shrink:0}.avs span:first-child{margin-left:0}
+.pt{font-size:.875rem}.pt strong{display:block;font-weight:700}.pt span{color:var(--m2);font-size:.78rem}
+.hstats{display:flex;gap:2.5rem;flex-wrap:wrap}
+.hs{border-left:2px solid var(--b1);padding-left:1.2rem}
+.hs-n{font-family:var(--hd);font-size:1.9rem;font-weight:800;color:var(--v);line-height:1}
+.hs-l{font-size:.73rem;color:var(--m2);letter-spacing:.04em;text-transform:uppercase;margin-top:.15rem}
+@keyframes fu{from{opacity:0;transform:translateY(22px)}to{opacity:1;transform:translateY(0)}}
+
+/* TICKER */
+.tkr{padding:1.1rem 0;border-top:1px solid var(--b1);border-bottom:1px solid var(--b1);overflow:hidden;background:var(--bg2)}
+.tkr-t{display:flex;gap:3rem;white-space:nowrap;animation:tk 22s linear infinite}.tkr-t:hover{animation-play-state:paused}
+@keyframes tk{to{transform:translateX(-50%)}}
+.tkr-i{font-size:.71rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--m)}.tkr-i b{color:var(--v);margin-right:.35rem}
+
+/* ═══════════════════════════════════
+   SECTION COMMONS
+═══════════════════════════════════ */
+section{padding:7rem 5%}
+.s-lbl{display:inline-block;font-size:.69rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--v);margin-bottom:.9rem}
+.s-ttl{font-family:var(--hd);font-size:clamp(1.9rem,3.8vw,2.9rem);font-weight:800;line-height:1.08;letter-spacing:-.03em;margin-bottom:1rem}
+.s-sub{color:var(--m2);line-height:1.78;max-width:520px}
+.sh{margin-bottom:3.5rem}
+.shr{display:flex;justify-content:space-between;align-items:flex-end;flex-wrap:wrap;gap:1.5rem;margin-bottom:3.5rem}
+
+/* CARDS */
+.cd{background:var(--card);border:1px solid var(--b1);border-radius:var(--r2);transition:border-color .3s,transform .3s}
+.cdh:hover{border-color:rgba(200,255,0,.25);transform:translateY(-4px)}
+
+/* CHIP */
+.chip{display:inline-flex;align-items:center;padding:.25rem .75rem;border-radius:99px;font-size:.71rem;font-weight:600;letter-spacing:.04em}
+.chip-v{background:rgba(200,255,0,.1);color:var(--v);border:1px solid rgba(200,255,0,.2)}
+.chip-o{background:rgba(255,107,43,.1);color:var(--o);border:1px solid rgba(255,107,43,.2)}
+.chip-c{background:rgba(0,217,255,.1);color:var(--cy);border:1px solid rgba(0,217,255,.2)}
+.chip-p{background:rgba(139,92,246,.1);color:var(--pu);border:1px solid rgba(139,92,246,.2)}
+
+/* REVEAL */
+.rv{opacity:0;transform:translateY(22px);transition:opacity .65s ease,transform .65s ease}
+.rv.vi{opacity:1;transform:translateY(0)}
+.rv.d1{transition-delay:.1s}.rv.d2{transition-delay:.2s}.rv.d3{transition-delay:.3s}.rv.d4{transition-delay:.4s}
+
+/* ═══════════════════════════════════
+   TRUST BAR
+═══════════════════════════════════ */
+#trust{background:var(--bg2);padding:2.5rem 5%;border-bottom:1px solid var(--b1)}
+.trust-inner{display:flex;justify-content:center;align-items:center;gap:3rem;flex-wrap:wrap}
+.trust-item{display:flex;align-items:center;gap:.6rem;font-size:.82rem;color:var(--m2)}
+.trust-item .ti{font-size:1.1rem}
+.trust-item b{color:var(--w);font-weight:600}
+
+/* ═══════════════════════════════════
+   SERVICES
+═══════════════════════════════════ */
+#services{background:var(--bg2)}
+.svc-g{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1px;background:var(--b1)}
+.svc-c{background:var(--bg2);padding:2.25rem 2rem;position:relative;overflow:hidden;transition:background .3s}
+.svc-c:hover{background:var(--card)}
+.svc-c::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,var(--v),var(--cy));transform:scaleX(0);transform-origin:left;transition:transform .4s}
+.svc-c:hover::before{transform:scaleX(1)}
+.svc-ico{width:48px;height:48px;border-radius:11px;background:rgba(200,255,0,.08);border:1px solid rgba(200,255,0,.15);display:flex;align-items:center;justify-content:center;font-size:1.3rem;margin-bottom:1.4rem}
+.svc-nm{font-family:var(--hd);font-size:1.08rem;font-weight:700;margin-bottom:.6rem}
+.svc-ds{font-size:.87rem;color:var(--m2);line-height:1.7;margin-bottom:1.2rem}
+.svc-tags{display:flex;flex-wrap:wrap;gap:.4rem}
+.stag{font-size:.68rem;background:rgba(255,255,255,.04);border:1px solid var(--b1);padding:.2rem .6rem;border-radius:99px;color:var(--m)}
+
+/* ═══════════════════════════════════
+   PORTFOLIO (filterable)
+═══════════════════════════════════ */
+#portfolio{background:var(--bg)}
+.pf-filters{display:flex;gap:.6rem;flex-wrap:wrap;margin-bottom:2.5rem}
+.pf-filter{padding:.45rem 1.1rem;border-radius:99px;font-size:.8rem;font-weight:600;background:var(--sf);border:1.5px solid var(--b1);color:var(--m2);cursor:pointer;transition:.2s}
+.pf-filter:hover{border-color:var(--v);color:var(--w)}
+.pf-filter.act{background:rgba(200,255,0,.1);border-color:var(--v);color:var(--v)}
+.pf-g{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:1.5rem}
+.pf-c{border-radius:var(--r2);overflow:hidden;background:var(--card);border:1px solid var(--b1);transition:all .35s;cursor:pointer}
+.pf-c:hover{transform:translateY(-6px);box-shadow:0 28px 80px rgba(0,0,0,.55);border-color:rgba(200,255,0,.28)}
+.pf-c.hide{opacity:0;pointer-events:none;transform:scale(.95)}
+.pf-img{height:225px;overflow:hidden;background:var(--sf);position:relative}
+.pf-img img{width:100%;height:100%;object-fit:cover;transition:transform .6s}
+.pf-c:hover .pf-img img{transform:scale(1.07)}
+.pf-ov{position:absolute;inset:0;background:linear-gradient(to top,rgba(5,5,7,.9),transparent 45%);opacity:0;transition:opacity .3s;display:flex;align-items:flex-end;padding:1.25rem}
+.pf-c:hover .pf-ov{opacity:1}
+.pf-ov-btn{font-family:var(--hd);font-size:.8rem;font-weight:700;color:var(--v);display:flex;align-items:center;gap:.4rem}
+.pf-body{padding:1.5rem}
+.pf-cats{display:flex;gap:.4rem;flex-wrap:wrap;margin-bottom:.6rem}
+.pf-cat{font-size:.68rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--v)}
+.pf-ttl{font-family:var(--hd);font-size:1.07rem;font-weight:700;margin-bottom:.45rem}
+.pf-ds{font-size:.85rem;color:var(--m2);line-height:1.65;margin-bottom:1rem}
+.pf-rs{display:flex;gap:1.5rem}
+.pf-r .rn{font-family:var(--hd);font-size:1.3rem;font-weight:800;color:var(--v);line-height:1}
+.pf-r .rl{font-size:.7rem;color:var(--m2)}
+
+/* ═══════════════════════════════════
+   ROI CALCULATOR
+═══════════════════════════════════ */
+#roi{background:var(--bg2)}
+.roi-wrap{display:grid;grid-template-columns:1fr 1fr;gap:2.5rem;align-items:start;max-width:900px;margin:0 auto}
+.roi-inputs{}
+.roi-inputs .rg{margin-bottom:1.5rem}
+.roi-inputs label{display:block;font-size:.73rem;font-weight:700;letter-spacing:.07em;text-transform:uppercase;color:var(--m2);margin-bottom:.5rem}
+.roi-inputs input[type=range]{width:100%;-webkit-appearance:none;appearance:none;height:3px;background:var(--b2);border-radius:2px;outline:none}
+.roi-inputs input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:18px;height:18px;border-radius:50%;background:var(--v);cursor:pointer;border:3px solid var(--bg);box-shadow:0 0 10px rgba(200,255,0,.4)}
+.roi-rv{display:flex;justify-content:space-between;font-size:.75rem;color:var(--m);margin-top:.3rem}
+.roi-out{background:var(--card);border:1px solid var(--b1);border-radius:var(--r2);padding:2rem;position:sticky;top:110px}
+.roi-out .ro-lbl{font-size:.72rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--m2);margin-bottom:.5rem}
+.roi-out .ro-num{font-family:var(--hd);font-size:2.4rem;font-weight:800;color:var(--v);line-height:1;margin-bottom:.25rem;transition:all .3s}
+.roi-breakdown{margin-top:1.5rem;border-top:1px solid var(--b1);padding-top:1.5rem}
+.roi-row{display:flex;justify-content:space-between;font-size:.85rem;padding:.4rem 0;border-bottom:1px solid rgba(255,255,255,.04)}
+.roi-row b{color:var(--w);font-weight:600}
+.roi-row span{color:var(--m2)}
+.roi-note{font-size:.75rem;color:var(--m);margin-top:1rem;line-height:1.6}
+.roi-note b{color:var(--v)}
+
+/* ═══════════════════════════════════
+   AI TOOLS HUB
+═══════════════════════════════════ */
+#aitools{background:var(--bg)}
+.ai-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:1.5rem;margin-bottom:3rem}
+.ai-card{border-radius:var(--r2);overflow:hidden;background:var(--card);border:1px solid var(--b1);transition:border-color .3s}
+.ai-card:hover{border-color:rgba(200,255,0,.2)}
+.ai-card-head{padding:1.75rem 2rem;border-bottom:1px solid var(--b1);background:linear-gradient(135deg,rgba(200,255,0,.06),rgba(0,217,255,.03))}
+.ai-card-head .ac-icon{font-size:2rem;margin-bottom:.75rem}
+.ai-card-head h3{font-family:var(--hd);font-size:1.12rem;font-weight:700;margin-bottom:.35rem}
+.ai-card-head p{font-size:.84rem;color:var(--m2);line-height:1.65}
+.ai-card-body{padding:2rem}
+.aif{margin-bottom:1rem}
+.aif label{display:block;font-size:.71rem;font-weight:700;letter-spacing:.07em;text-transform:uppercase;color:var(--m2);margin-bottom:.45rem}
+.aif input,.aif select,.aif textarea{width:100%;background:var(--sf);border:1.5px solid var(--b1);border-radius:10px;padding:.8rem 1rem;color:var(--w);font-family:var(--bd);font-size:.875rem;outline:none;transition:border-color .2s}
+.aif input:focus,.aif select:focus,.aif textarea:focus{border-color:var(--v)}
+.aif select{appearance:none;cursor:pointer}
+.aif select option{background:var(--card)}
+.aif textarea{resize:vertical;min-height:75px}
+.ai-run{width:100%;padding:.9rem;border-radius:99px;background:var(--v);color:#000;font-family:var(--hd);font-weight:700;font-size:.9rem;border:none;cursor:pointer;transition:.22s;margin-top:.5rem;display:flex;align-items:center;justify-content:center;gap:.5rem}
+.ai-run:hover{transform:translateY(-2px);box-shadow:0 10px 35px var(--vg)}
+.ai-run:disabled{opacity:.6;cursor:not-allowed;transform:none}
+.ai-result{display:none;margin-top:1.5rem;padding:1.25rem;border-radius:var(--r);background:rgba(200,255,0,.05);border:1px solid rgba(200,255,0,.2)}
+.ai-result.show{display:block}
+.ai-result-content{font-size:.875rem;color:var(--m2);line-height:1.78;white-space:pre-wrap}
+.ai-score{font-family:var(--hd);font-size:3rem;font-weight:800;color:var(--v);text-align:center;margin-bottom:.5rem}
+.ai-loader{display:none;text-align:center;padding:1.5rem}
+.ai-loader.show{display:block}
+.ai-dots{display:flex;justify-content:center;gap:.4rem;margin-bottom:.75rem}
+.ai-dots span{width:8px;height:8px;background:var(--v);border-radius:50%;animation:aiDot 1.4s ease infinite}
+.ai-dots span:nth-child(2){animation-delay:.2s}
+.ai-dots span:nth-child(3){animation-delay:.4s}
+@keyframes aiDot{0%,80%,100%{transform:scale(1);opacity:.5}40%{transform:scale(1.4);opacity:1}}
+.ai-loader p{font-size:.82rem;color:var(--m2)}
+.ai-error{display:none;margin-top:1rem;padding:.9rem 1rem;border-radius:var(--r);background:rgba(255,64,64,.08);border:1px solid rgba(255,64,64,.2);font-size:.82rem;color:#ff8080}
+.ai-error.show{display:block}
+
+/* ═══════════════════════════════════
+   MULTI-STEP LEAD FORM
+═══════════════════════════════════ */
+#leads{background:var(--bg2)}
+.ff{max-width:800px;margin:0 auto;background:var(--card);border:1px solid var(--b1);border-radius:var(--r3);overflow:hidden}
+.ff-pr{height:3px;background:var(--b1);position:relative}
+.ff-prf{position:absolute;left:0;top:0;bottom:0;background:var(--v);border-radius:0 2px 2px 0;transition:width .4s}
+.ff-tabs{display:flex;border-bottom:1px solid var(--b1);background:rgba(0,0,0,.2)}
+.ff-tab{flex:1;padding:.85rem;text-align:center;font-size:.71rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--m);transition:color .3s;cursor:default}
+.ff-tab.act{color:var(--v)}.ff-tab.dn{color:var(--m2)}
+.ff-tab.dn::after{content:' ✓';color:var(--v)}
+.ff-bd{padding:2.5rem}
+.fp{display:none}.fp.on{display:block}
+.ft{font-family:var(--hd);font-size:1.4rem;font-weight:800;margin-bottom:.3rem}
+.fsb{font-size:.875rem;color:var(--m2);margin-bottom:2rem}
+.frow{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
+.fg{margin-bottom:1rem}
+.fgl{display:block;font-size:.71rem;font-weight:700;letter-spacing:.07em;text-transform:uppercase;color:var(--m2);margin-bottom:.45rem}
+.fg input,.fg select,.fg textarea{width:100%;background:var(--sf);border:1.5px solid var(--b1);border-radius:10px;padding:.82rem 1rem;color:var(--w);font-family:var(--bd);font-size:.88rem;outline:none;transition:border-color .2s}
+.fg input:focus,.fg select:focus,.fg textarea:focus{border-color:var(--v)}
+.fg select{appearance:none;cursor:pointer}.fg select option{background:var(--card)}
+.fg textarea{resize:vertical;min-height:90px}
+.pg{display:flex;flex-wrap:wrap;gap:.5rem}
+.pl{padding:.42rem .9rem;border-radius:99px;font-size:.79rem;font-weight:600;background:var(--sf);border:1.5px solid var(--b1);cursor:pointer;transition:.2s;color:var(--m2)}
+.pl:hover{border-color:rgba(200,255,0,.4);color:var(--w)}
+.pl.on{background:rgba(200,255,0,.1);border-color:var(--v);color:var(--v)}
+.ff-ax{display:flex;justify-content:space-between;align-items:center;margin-top:1.75rem;flex-wrap:wrap;gap:1rem}
+.ff-bk{background:none;border:none;color:var(--m2);font-size:.875rem;cursor:pointer;font-family:var(--bd);display:flex;align-items:center;gap:.3rem;transition:color .2s}
+.ff-bk:hover{color:var(--w)}
+.qual-box{display:none;border-radius:var(--r);padding:1.5rem;margin-bottom:1.5rem;background:rgba(200,255,0,.05);border:1px solid rgba(200,255,0,.18)}
+.qual-box.show{display:block}
+.qbt{font-family:var(--hd);font-size:.95rem;font-weight:700;color:var(--v);margin-bottom:.4rem}
+.qbc{font-size:.86rem;color:var(--m2);line-height:1.72}
+.ff-suc{display:none;text-align:center;padding:4rem 2rem}
+.ff-suc.on{display:block}
+.fsi{font-size:3.5rem;margin-bottom:1rem}
+.fst{font-family:var(--hd);font-size:1.55rem;font-weight:800;margin-bottom:.5rem}
+.fss{color:var(--m2);font-size:.9rem;line-height:1.75;margin-bottom:2rem}
+.fsa{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap}
+
+/* ═══════════════════════════════════
+   PRICING
+═══════════════════════════════════ */
+#pricing{background:var(--bg)}
+.pg-g{display:grid;grid-template-columns:repeat(auto-fit,minmax(275px,1fr));gap:1.5rem}
+.pc{border-radius:var(--r2);padding:2.25rem 2rem;background:var(--card);border:1px solid var(--b1);position:relative;transition:all .3s}
+.pc:hover{transform:translateY(-5px);box-shadow:0 24px 70px rgba(0,0,0,.4)}
+.pc.hot{border-color:var(--v);background:linear-gradient(155deg,rgba(200,255,0,.07),var(--card));box-shadow:var(--sh)}
+.pc-badge{position:absolute;top:-1px;left:50%;transform:translateX(-50%);background:var(--v);color:#000;font-size:.68rem;font-weight:800;letter-spacing:.1em;text-transform:uppercase;padding:.27rem .9rem;border-radius:0 0 8px 8px}
+.pt{font-family:var(--hd);font-size:.78rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--m2);margin-bottom:.9rem}
+.pa{font-family:var(--hd);font-size:2.6rem;font-weight:800;line-height:1;margin-bottom:.2rem}
+.pa sup{font-size:1rem;vertical-align:super;margin-right:.1rem;color:var(--m2)}
+.pcy{font-size:.79rem;color:var(--m2);margin-bottom:1.75rem}
+.pcy .del{color:var(--v);font-weight:600}
+.pfl{list-style:none;margin-bottom:2rem}
+.pfl li{font-size:.87rem;padding:.5rem 0;border-bottom:1px solid rgba(255,255,255,.04);display:flex;align-items:flex-start;gap:.6rem;color:var(--m2);line-height:1.5}
+.pfl li::before{content:'✓';color:var(--v);font-weight:800;font-size:.75rem;flex-shrink:0;margin-top:.15rem}
+.pfl li.no{opacity:.35}.pfl li.no::before{content:'—';color:var(--m)}
+.pb2{width:100%;padding:.88rem;border-radius:99px;font-family:var(--hd);font-weight:700;font-size:.9rem;border:none;transition:.22s;letter-spacing:.01em}
+.pb2.solid{background:var(--v);color:#000}.pb2.solid:hover{box-shadow:var(--sh);transform:scale(1.01)}
+.pb2.ot{background:transparent;color:var(--w);border:1.5px solid var(--b2)}.pb2.ot:hover{border-color:var(--v);background:rgba(200,255,0,.05)}
+.roi-tag{margin-top:.75rem;padding:.6rem .9rem;border-radius:var(--r);background:rgba(200,255,0,.06);border:1px solid rgba(200,255,0,.15);font-size:.78rem;color:var(--v);display:flex;align-items:center;gap:.4rem}
+.dep-b{max-width:900px;margin:2.5rem auto 0;background:linear-gradient(135deg,rgba(255,107,43,.1),rgba(200,255,0,.06));border:1px solid rgba(255,107,43,.25);border-radius:var(--r2);padding:2rem 2.5rem;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:1.5rem}
+.dep-b .dt{font-family:var(--hd);font-size:1.25rem;font-weight:800;margin-bottom:.35rem}
+.dep-b .ds{font-size:.875rem;color:var(--m2)}.dep-b .ds b{color:var(--o)}
+
+/* ═══════════════════════════════════
+   PROCESS
+═══════════════════════════════════ */
+#process{background:var(--bg2)}
+.pr-g{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1.5rem;counter-reset:pr}
+.pr-c{counter-increment:pr;border-radius:var(--r2);padding:2rem;background:var(--card);border:1px solid var(--b1);position:relative;transition:.3s}
+.pr-c:hover{border-color:rgba(200,255,0,.25);transform:translateY(-3px)}
+.pr-c::before{content:counter(pr,decimal-leading-zero);font-family:var(--hd);font-size:3.8rem;font-weight:800;color:rgba(200,255,0,.06);position:absolute;top:.5rem;right:1rem;line-height:1;pointer-events:none}
+.pr-n{font-size:.69rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--v);margin-bottom:.7rem}
+.pr-t{font-family:var(--hd);font-size:1.02rem;font-weight:700;margin-bottom:.55rem}
+.pr-d{font-size:.86rem;color:var(--m2);line-height:1.72}
+
+/* ═══════════════════════════════════
+   CLIENT PORTAL PREVIEW
+═══════════════════════════════════ */
+#portal{background:var(--bg)}
+.port-wrap{display:grid;grid-template-columns:1fr 1.15fr;gap:4rem;align-items:center;max-width:1100px;margin:0 auto}
+.port-info .s-sub{margin-bottom:1.75rem}
+.port-feats{display:flex;flex-direction:column;gap:.7rem;margin-bottom:2rem}
+.pfi{display:flex;align-items:center;gap:.75rem;font-size:.875rem;color:var(--m2)}
+.pfi::before{content:'→';color:var(--v);font-weight:700;flex-shrink:0}
+.port-prev{background:var(--card);border:1px solid var(--b1);border-radius:var(--r2);overflow:hidden;box-shadow:0 32px 100px rgba(0,0,0,.55)}
+.port-bar{background:var(--sf);border-bottom:1px solid var(--b1);padding:.7rem 1rem;display:flex;align-items:center;gap:.75rem}
+.dots{display:flex;gap:.35rem}.dots span{width:10px;height:10px;border-radius:50%}
+.dots span:nth-child(1){background:#FF5F57}.dots span:nth-child(2){background:#FFBD2E}.dots span:nth-child(3){background:#27C93F}
+.purl{background:var(--card2);border-radius:6px;padding:.28rem .75rem;font-size:.7rem;color:var(--m);flex:1;font-family:monospace}
+.port-bd{padding:1.5rem}
+.pch{display:flex;justify-content:space-between;align-items:center;margin-bottom:1.4rem}
+.pcn{font-family:var(--hd);font-size:.95rem;font-weight:700}
+.pst{font-size:.68rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;padding:.25rem .65rem;border-radius:99px;background:rgba(200,255,0,.1);color:var(--v);border:1px solid rgba(200,255,0,.2)}
+.ppl{display:flex;justify-content:space-between;font-size:.72rem;color:var(--m2);margin-bottom:.5rem}
+.ppbar{height:5px;background:var(--b2);border-radius:3px;overflow:hidden;margin-bottom:1.25rem}
+.ppbar-f{height:100%;background:linear-gradient(90deg,var(--v),var(--cy));border-radius:3px;animation:pf 2.2s ease forwards;width:0}
+@keyframes pf{to{width:68%}}
+.pms{display:flex;flex-direction:column;gap:.65rem}
+.pm{display:flex;align-items:center;gap:.75rem;padding:.65rem .9rem;border-radius:9px;background:var(--sf);font-size:.82rem}
+.pmd{width:8px;height:8px;border-radius:50%;flex-shrink:0}
+.pm.dn .pmd{background:var(--v)}
+.pm.ac .pmd{background:var(--cy);box-shadow:0 0 8px var(--cy)}
+.pm.pd .pmd{background:var(--b2)}
+.pm.dn span{color:var(--m2);text-decoration:line-through;opacity:.6}
+.pm.ac span{color:var(--w);font-weight:600}
+.pm.pd span{color:var(--m)}
+
+/* ═══════════════════════════════════
+   MEMBERSHIP — STACKTECH CIRCLE
+═══════════════════════════════════ */
+#circle{background:var(--bg2)}
+.circle-hero{text-align:center;margin-bottom:3rem}
+.circle-wrap{display:grid;grid-template-columns:1fr 1.4fr;gap:3rem;align-items:start}
+.circle-card{background:var(--card);border:1px solid var(--b1);border-radius:var(--r2);padding:2rem;margin-bottom:1.5rem;transition:.3s}
+.circle-card:hover{border-color:rgba(200,255,0,.25)}
+.cc-icon{font-size:1.5rem;margin-bottom:.75rem}
+.cc-title{font-family:var(--hd);font-size:1rem;font-weight:700;margin-bottom:.4rem}
+.cc-desc{font-size:.86rem;color:var(--m2);line-height:1.68}
+.circle-price{background:linear-gradient(135deg,rgba(200,255,0,.08),rgba(139,92,246,.05));border:1px solid rgba(200,255,0,.2);border-radius:var(--r2);padding:2.5rem;text-align:center}
+.cp-badge{display:inline-flex;align-items:center;gap:.4rem;background:rgba(200,255,0,.1);border:1px solid rgba(200,255,0,.2);color:var(--v);padding:.35rem .9rem;border-radius:99px;font-size:.72rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;margin-bottom:1.5rem}
+.cp-amount{font-family:var(--hd);font-size:3rem;font-weight:800;color:var(--v);line-height:1;margin-bottom:.25rem}
+.cp-amount sub{font-size:1rem;font-weight:400;color:var(--m2)}
+.cp-cycle{font-size:.82rem;color:var(--m2);margin-bottom:2rem}
+.circle-feats{list-style:none;text-align:left;margin-bottom:2rem}
+.circle-feats li{font-size:.875rem;padding:.5rem 0;border-bottom:1px solid rgba(255,255,255,.04);display:flex;align-items:center;gap:.6rem;color:var(--m2)}
+.circle-feats li::before{content:'✓';color:var(--v);font-weight:800;font-size:.75rem}
+.cp-note{font-size:.78rem;color:var(--m);margin-top:1rem}
+
+/* ═══════════════════════════════════
+   MAINTENANCE
+═══════════════════════════════════ */
+#maintenance{background:var(--bg)}
+.mn-g{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1.5rem}
+.mn-c{border-radius:var(--r2);padding:2rem;background:var(--card);border:1px solid var(--b1);transition:.3s}
+.mn-c:hover{transform:translateY(-4px);border-color:rgba(200,255,0,.25)}
+.mn-c.hot{border-color:rgba(200,255,0,.3);background:rgba(200,255,0,.03)}
+.mn-bge{display:inline-flex;align-items:center;gap:.35rem;font-size:.69rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--v);margin-bottom:1.2rem}
+.mn-bge::before{content:'●';font-size:.4rem;animation:blink 2s infinite}
+.mn-nm{font-family:var(--hd);font-size:1rem;font-weight:700;margin-bottom:.3rem}
+.mn-pr{font-family:var(--hd);font-size:1.9rem;font-weight:800;color:var(--v);margin-bottom:.15rem}
+.mn-pr sup{font-size:.9rem;vertical-align:super}.mn-pr sub{font-size:.78rem;font-weight:400;color:var(--m2)}
+.mn-cy{font-size:.77rem;color:var(--m);margin-bottom:1.4rem}
+.mn-fl{list-style:none;margin-bottom:1.75rem}
+.mn-fl li{font-size:.86rem;padding:.42rem 0;border-bottom:1px solid rgba(255,255,255,.04);display:flex;align-items:center;gap:.55rem;color:var(--m2)}
+.mn-fl li::before{content:'✓';color:var(--v);font-weight:800;font-size:.72rem}
+
+/* ═══════════════════════════════════
+   RESOURCE HUB
+═══════════════════════════════════ */
+#resources{background:var(--bg2)}
+.res-g{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1.5rem}
+.res-c{border-radius:var(--r2);overflow:hidden;background:var(--card);border:1px solid var(--b1);transition:.3s;cursor:pointer}
+.res-c:hover{transform:translateY(-4px);border-color:rgba(200,255,0,.25)}
+.res-thumb{height:130px;display:flex;align-items:center;justify-content:center;font-size:2.4rem;position:relative;overflow:hidden}
+.res-thumb-bg{position:absolute;inset:0;opacity:.18}
+.res-body{padding:1.4rem}
+.res-type{font-size:.68rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;margin-bottom:.5rem;display:flex;align-items:center;gap:.4rem}
+.res-ttl{font-family:var(--hd);font-size:.98rem;font-weight:700;line-height:1.4;margin-bottom:.4rem}
+.res-meta{font-size:.74rem;color:var(--m);display:flex;align-items:center;gap:.6rem}
+.res-free{color:var(--v);font-weight:700}
+
+/* ═══════════════════════════════════
+   TESTIMONIALS
+═══════════════════════════════════ */
+#testimonials{background:var(--bg)}
+.ts-g{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:1.5rem}
+.ts-c{background:var(--card);border:1px solid var(--b1);border-radius:var(--r2);padding:2rem;transition:border-color .3s}
+.ts-c:hover{border-color:rgba(200,255,0,.2)}
+.ts-st{font-size:.85rem;letter-spacing:.06em;color:var(--v);margin-bottom:.9rem}
+.ts-q{font-size:.94rem;line-height:1.78;margin-bottom:1.5rem;color:rgba(241,243,255,.82);font-style:italic;position:relative;padding-left:1rem}
+.ts-q::before{content:'"';font-family:var(--hd);font-size:5rem;color:rgba(200,255,0,.1);position:absolute;top:-2rem;left:-.6rem;line-height:1;font-style:normal}
+.ts-au{display:flex;align-items:center;gap:.9rem}
+.ts-av{width:42px;height:42px;border-radius:50%;background:linear-gradient(135deg,var(--v),var(--cy));display:flex;align-items:center;justify-content:center;font-family:var(--hd);font-weight:800;font-size:.82rem;color:#000;flex-shrink:0}
+.ts-nm{font-weight:700;font-size:.9rem}.ts-rl{font-size:.76rem;color:var(--m2)}
+
+/* ═══════════════════════════════════
+   REFERRAL
+═══════════════════════════════════ */
+#referral{background:var(--bg2)}
+.ref-wrap{max-width:840px;margin:0 auto;text-align:center}
+.ref-cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1.25rem;margin:2.5rem 0;text-align:left}
+.rfc{background:var(--card);border:1px solid var(--b1);border-radius:var(--r2);padding:1.75rem;transition:.3s}
+.rfc:hover{border-color:rgba(200,255,0,.25);transform:translateY(-3px)}
+.rfc-n{font-family:var(--hd);font-size:2.1rem;font-weight:800;color:var(--v);margin-bottom:.3rem}
+.rfc-t{font-size:.875rem;font-weight:700;margin-bottom:.35rem}
+.rfc-d{font-size:.8rem;color:var(--m2);line-height:1.6}
+.ref-link-b{background:var(--card);border:1px solid var(--b1);border-radius:var(--r2);padding:2rem;margin-top:2rem;text-align:left}
+.rlb-t{font-family:var(--hd);font-size:1rem;font-weight:700;margin-bottom:.9rem}
+.rlb-row{display:flex;gap:.75rem;align-items:center;flex-wrap:wrap}
+.rlb-inp{flex:1;min-width:200px;background:var(--sf);border:1.5px solid var(--b1);border-radius:10px;padding:.75rem 1rem;color:var(--m2);font-size:.84rem;font-family:monospace;outline:none}
+.rlb-copy{padding:.75rem 1.2rem;font-size:.82rem}
+
+/* ═══════════════════════════════════
+   BLOG
+═══════════════════════════════════ */
+#blog{background:var(--bg)}
+.bl-g{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1.5rem}
+.bl-c{background:var(--card);border:1px solid var(--b1);border-radius:var(--r2);overflow:hidden;transition:.3s;cursor:pointer}
+.bl-c:hover{transform:translateY(-4px);border-color:rgba(200,255,0,.2)}
+.bl-th{height:150px;display:flex;align-items:center;justify-content:center;font-size:2.5rem;position:relative;overflow:hidden}
+.bl-thb{position:absolute;inset:0;opacity:.15}
+.bl-bd{padding:1.5rem}
+.bl-cat{font-size:.68rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--v);margin-bottom:.5rem}
+.bl-ttl{font-family:var(--hd);font-size:.98rem;font-weight:700;line-height:1.4;margin-bottom:.5rem}
+.bl-mt{font-size:.74rem;color:var(--m)}
+
+/* ═══════════════════════════════════
+   CALENDAR BOOKING
+═══════════════════════════════════ */
+.cal-overlay{position:fixed;inset:0;background:rgba(0,0,0,.88);z-index:900;display:flex;align-items:center;justify-content:center;padding:1.5rem;opacity:0;pointer-events:none;transition:.3s;backdrop-filter:blur(10px)}
+.cal-overlay.on{opacity:1;pointer-events:all}
+.cal-box{background:var(--card);border:1px solid var(--b1);border-radius:var(--r3);width:100%;max-width:600px;overflow:hidden;transform:translateY(16px);transition:.3s}
+.cal-overlay.on .cal-box{transform:translateY(0)}
+.cal-head{padding:1.75rem 2rem;border-bottom:1px solid var(--b1);display:flex;justify-content:space-between;align-items:center;background:linear-gradient(135deg,rgba(200,255,0,.07),transparent)}
+.cal-head h3{font-family:var(--hd);font-size:1.3rem;font-weight:800}
+.cal-close{background:var(--sf);border:1px solid var(--b1);border-radius:9px;width:34px;height:34px;display:flex;align-items:center;justify-content:center;cursor:pointer;color:var(--m2);transition:.2s;font-size:.9rem}
+.cal-close:hover{border-color:var(--v);color:var(--w)}
+.cal-body{padding:2rem}
+.cal-sub{font-size:.875rem;color:var(--m2);margin-bottom:1.75rem}
+.time-g{display:grid;grid-template-columns:repeat(auto-fill,minmax(130px,1fr));gap:.75rem;margin-bottom:2rem}
+.ts{padding:.75rem;border-radius:var(--r);background:var(--sf);border:1.5px solid var(--b1);font-size:.82rem;font-weight:600;text-align:center;cursor:pointer;transition:.2s;color:var(--m2)}
+.ts:hover{border-color:rgba(200,255,0,.4);color:var(--w)}
+.ts.sel{background:rgba(200,255,0,.1);border-color:var(--v);color:var(--v)}
+.ts.taken{opacity:.3;cursor:not-allowed;text-decoration:line-through}
+.cal-pick-lbl{font-size:.72rem;font-weight:700;letter-spacing:.07em;text-transform:uppercase;color:var(--m2);margin-bottom:.75rem}
+
+/* ═══════════════════════════════════
+   CASE STUDY MODAL
+═══════════════════════════════════ */
+.cs-overlay{position:fixed;inset:0;background:rgba(0,0,0,.92);z-index:900;display:flex;align-items:center;justify-content:center;padding:1.5rem;opacity:0;pointer-events:none;transition:.3s;backdrop-filter:blur(12px)}
+.cs-overlay.on{opacity:1;pointer-events:all}
+.cs-box{background:var(--card);border:1px solid var(--b1);border-radius:var(--r3);width:100%;max-width:720px;max-height:88vh;overflow-y:auto;transform:translateY(16px);transition:.3s}
+.cs-overlay.on .cs-box{transform:translateY(0)}
+.cs-head{position:sticky;top:0;background:var(--card);border-bottom:1px solid var(--b1);padding:1.5rem 2rem;display:flex;justify-content:space-between;align-items:center;z-index:2}
+.cs-head h3{font-family:var(--hd);font-size:1.2rem;font-weight:800}
+.cs-body{padding:2rem}
+.cs-img{width:100%;border-radius:var(--r);overflow:hidden;height:240px;margin-bottom:2rem;background:var(--sf)}
+.cs-img img{width:100%;height:100%;object-fit:cover}
+.cs-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;margin-bottom:2rem}
+.cs-stat{background:var(--sf);border-radius:var(--r);padding:1rem;text-align:center;border:1px solid var(--b1)}
+.css-n{font-family:var(--hd);font-size:1.7rem;font-weight:800;color:var(--v);line-height:1}
+.css-l{font-size:.72rem;color:var(--m2);margin-top:.2rem}
+.cs-section h4{font-family:var(--hd);font-size:.95rem;font-weight:700;color:var(--v);margin-bottom:.5rem;margin-top:1.5rem}
+.cs-section p{font-size:.875rem;color:var(--m2);line-height:1.75}
+.cs-section ul{list-style:none;margin-top:.5rem}
+.cs-section ul li{font-size:.875rem;color:var(--m2);padding:.3rem 0;display:flex;align-items:center;gap:.5rem}
+.cs-section ul li::before{content:'✓';color:var(--v);font-size:.75rem}
+
+/* ═══════════════════════════════════
+   FLOATING ELEMENTS
+═══════════════════════════════════ */
+.wa-fl{position:fixed;bottom:7rem;right:2rem;z-index:490;width:54px;height:54px;border-radius:50%;background:#25D366;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 20px rgba(37,211,102,.4);transition:transform .2s;cursor:pointer}
+.wa-fl:hover{transform:scale(1.1)}
+.wa-fl svg{width:26px;height:26px;fill:#fff}
+.wa-ring{position:absolute;inset:-4px;border-radius:50%;border:2px solid #25D366;animation:waring 2.5s ease-out infinite}
+@keyframes waring{0%{opacity:.7;transform:scale(1)}100%{opacity:0;transform:scale(1.6)}}
+.book-fl{position:fixed;bottom:2rem;right:2rem;z-index:491;background:var(--v);color:#000;padding:.7rem 1.4rem;border-radius:99px;font-family:var(--hd);font-weight:700;font-size:.82rem;box-shadow:0 8px 30px var(--vg);cursor:pointer;border:none;transition:.22s;display:flex;align-items:center;gap:.45rem;transform:translateX(200%)}
+.book-fl.show{transform:translateX(0)}
+.book-fl:hover{transform:translateX(0) translateY(-2px);box-shadow:0 14px 40px var(--vg)}
+
+/* STICKY BAR */
+.stk{position:fixed;bottom:0;left:0;right:0;z-index:488;background:rgba(5,5,7,.95);border-top:1px solid var(--b1);backdrop-filter:blur(18px);padding:.9rem 5%;display:flex;justify-content:space-between;align-items:center;gap:1rem;transform:translateY(100%);transition:.4s}
+.stk.up{transform:translateY(0)}
+.stk-t{font-size:.875rem;color:var(--m2)}.stk-t b{color:var(--w)}
+.stk-a{display:flex;gap:.75rem;flex-shrink:0}
+
+/* ═══════════════════════════════════
+   FOOTER
+═══════════════════════════════════ */
+footer{background:var(--bg2);border-top:1px solid var(--b1);padding:5rem 5% 2.5rem}
+.ft-g{display:grid;grid-template-columns:1.7fr 1fr 1fr 1fr;gap:3rem;margin-bottom:4rem}
+.ft-logo{font-family:var(--hd);font-weight:800;font-size:1.35rem;letter-spacing:-.03em;display:flex;align-items:center;gap:.4rem;margin-bottom:.9rem}
+.ft-logo em{color:var(--v);font-style:normal}
+.ft-logo .dot{width:6px;height:6px;background:var(--v);border-radius:50%;box-shadow:0 0 8px var(--v)}
+.ft-ds{font-size:.86rem;color:var(--m2);line-height:1.78;max-width:265px}
+.ft-c h4{font-family:var(--hd);font-size:.78rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;margin-bottom:1.2rem}
+.ft-c ul{list-style:none}
+.ft-c ul li{margin-bottom:.6rem}
+.ft-c ul li a{font-size:.86rem;color:var(--m2);transition:color .2s}
+.ft-c ul li a:hover{color:var(--v)}
+.ft-bot{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1rem;padding-top:2rem;border-top:1px solid var(--b1);font-size:.79rem;color:var(--m)}
+.ft-bot b{color:var(--v)}
+
+/* ═══════════════════════════════════
+   RESPONSIVE
+═══════════════════════════════════ */
+@media(max-width:1024px){.ft-g{grid-template-columns:1fr 1fr}.port-wrap{grid-template-columns:1fr}.circle-wrap{grid-template-columns:1fr}.roi-wrap{grid-template-columns:1fr}}
+@media(max-width:768px){section{padding:5rem 5%}nav .nav-ul,.nav-r .btn:not(.bs){display:none}.ham{display:flex}.frow{grid-template-columns:1fr}.cs-stats{grid-template-columns:1fr 1fr}.stk .stk-t{display:none}}
+@media(max-width:480px){.hero-acts,.hero-acts .btn{width:100%;justify-content:center;flex-direction:column}.ff-ax{flex-direction:column}.fsa{flex-direction:column}}
+</style>
+</head>
+<body>
+
+<div id="pb"></div>
+
+<!-- URGENCY FLASH BANNER -->
+<div id="flash">
+  <div class="fl-text">
+    <span>🔥 <b>Mombasa Business Special</b> — 3 website slots open this month. </span>
+    <span>Offer expires in:</span>
+    <div class="fl-timer">
+      <div class="fl-unit" id="fh">--</div>:<div class="fl-unit" id="fm">--</div>:<div class="fl-unit" id="fs2">--</div>
+    </div>
+    <a href="#contact-lead" style="color:var(--v);font-weight:700;text-decoration:underline;text-underline-offset:2px" onclick="document.getElementById('flash').style.display='none'">Claim Slot →</a>
+  </div>
+  <button class="fl-close" onclick="closeBanner()">✕</button>
+</div>
+
+<!-- NAV -->
+<nav id="nav">
+  <a href="#hero" class="nl">Stack<em>Tech</em><span class="dot"></span></a>
+  <ul class="nav-ul">
+    <li><a href="#services">Services</a></li>
+    <li><a href="#portfolio">Work</a></li>
+    <li><a href="#aitools">AI Tools</a></li>
+    <li><a href="#pricing">Pricing</a></li>
+    <li><a href="#circle">Circle</a></li>
+    <li><a href="#portal">Portal</a></li>
+    <li><a href="#resources">Resources</a></li>
+  </ul>
+  <div class="nav-r">
+    <a href="https://wa.me/254795451238" class="btn bg bs" target="_blank">WhatsApp</a>
+    <button class="btn bv bs" onclick="openCal()">Book Free Call →</button>
+    <button class="ham" id="hamBtn" onclick="openMob()"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<!-- MOBILE MENU -->
+<div class="mob-m" id="mobM">
+  <button class="mob-x" onclick="closeMob()">✕</button>
+  <a href="#services" onclick="closeMob()">Services</a>
+  <a href="#portfolio" onclick="closeMob()">Work</a>
+  <a href="#aitools" onclick="closeMob()">AI Tools 🤖</a>
+  <a href="#pricing" onclick="closeMob()">Pricing</a>
+  <a href="#circle" onclick="closeMob()">Circle</a>
+  <a href="#portal" onclick="closeMob()">Portal</a>
+  <a href="#resources" onclick="closeMob()">Resources</a>
+  <a href="#contact-lead" onclick="closeMob()">Start Project →</a>
+</div>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-mesh"></div>
+  <div class="hero-dots"></div>
+  <div class="hero-ring"><div class="r3"></div></div>
+  <div class="hero-c">
+    <div class="hero-badge"><span class="bd"></span>Open for projects — Mombasa &amp; Remote 🇰🇪</div>
+    <h1 class="hero-h">
+      We build websites that<br>
+      turn visitors into<br><span class="hl"><span id="tw">paying customers</span><span id="cr"></span></span>
+    </h1>
+    <p class="hero-sub">StackTech is not just an agency — it's a complete digital platform. From AI-powered audits to client portals and recurring revenue systems, we engineer businesses that grow online.</p>
+    <div class="hero-acts">
+      <button class="btn bv bl" onclick="document.getElementById('contact-lead').scrollIntoView({behavior:'smooth'})">Start Your Project →</button>
+      <a href="#aitools" class="btn bg bl">Try Free AI Audit 🤖</a>
+    </div>
+    <div class="hero-proof">
+      <div class="avs"><span>JN</span><span>DM</span><span>PO</span><span>SM</span><span>+6</span></div>
+      <div class="pt"><strong>10+ clients growing with StackTech</strong><span>⭐ 98% satisfaction · 72h first delivery · Mombasa-based</span></div>
+      <div class="hstats">
+        <div class="hs"><div class="hs-n" data-count="10" data-sfx="+">0</div><div class="hs-l">Projects</div></div>
+        <div class="hs"><div class="hs-n" data-count="98" data-sfx="%">0</div><div class="hs-l">Satisfaction</div></div>
+        <div class="hs"><div class="hs-n" data-count="3" data-sfx="×">0</div><div class="hs-l">Lead Growth</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TICKER -->
+<div class="tkr">
+  <div class="tkr-t">
+    <span class="tkr-i"><b>✦</b>Web Development</span><span class="tkr-i"><b>✦</b>UI/UX Design</span><span class="tkr-i"><b>✦</b>E-commerce + M-Pesa</span><span class="tkr-i"><b>✦</b>Church Websites</span><span class="tkr-i"><b>✦</b>AI Website Audits</span><span class="tkr-i"><b>✦</b>Client Portals</span><span class="tkr-i"><b>✦</b>SEO Optimization</span><span class="tkr-i"><b>✦</b>Web Applications</span><span class="tkr-i"><b>✦</b>Web Development</span><span class="tkr-i"><b>✦</b>UI/UX Design</span><span class="tkr-i"><b>✦</b>E-commerce + M-Pesa</span><span class="tkr-i"><b>✦</b>Church Websites</span><span class="tkr-i"><b>✦</b>AI Website Audits</span><span class="tkr-i"><b>✦</b>Client Portals</span><span class="tkr-i"><b>✦</b>SEO Optimization</span><span class="tkr-i"><b>✦</b>Web Applications</span>
+  </div>
+</div>
+
+<!-- TRUST BAR -->
+<div id="trust" class="rv">
+  <div class="trust-inner">
+    <div class="trust-item"><span class="ti">🏆</span> <b>Top Rated</b> Mombasa Agency</div>
+    <div class="trust-item"><span class="ti">⚡</span> <b>72-hour</b> First Delivery</div>
+    <div class="trust-item"><span class="ti">🔒</span> <b>Secure</b> Client Portal</div>
+    <div class="trust-item"><span class="ti">📱</span> <b>M-Pesa</b> Payments Built-in</div>
+    <div class="trust-item"><span class="ti">🤖</span> <b>AI-Enhanced</b> Development</div>
+    <div class="trust-item"><span class="ti">♾️</span> <b>Ongoing</b> Maintenance Plans</div>
+  </div>
+</div>
+
+<!-- SERVICES -->
+<section id="services">
+  <div class="shr rv">
+    <div>
+      <span class="s-lbl">What We Build</span>
+      <h2 class="s-ttl">Every Service Engineered<br>to Generate Revenue</h2>
+    </div>
+    <p class="s-sub rv d2">We don't build websites for looks. We engineer growth systems built to capture leads, convert visitors, and scale your business.</p>
+  </div>
+  <div class="svc-g rv">
+    <div class="svc-c"><div class="svc-ico">🌐</div><div class="svc-nm">Web Development</div><div class="svc-ds">Custom, high-performance websites engineered for speed, SEO, and conversion. Every site scores 90+ on Lighthouse.</div><div class="svc-tags"><span class="stag">React/Next.js</span><span class="stag">Node.js</span><span class="stag">Mobile-first</span><span class="stag">CMS</span></div></div>
+    <div class="svc-c"><div class="svc-ico">🎨</div><div class="svc-nm">UI/UX Design</div><div class="svc-ds">Psychology-driven design that guides visitors toward action. Wireframes, prototypes, and user-tested flows.</div><div class="svc-tags"><span class="stag">Figma</span><span class="stag">Prototyping</span><span class="stag">User Testing</span><span class="stag">Design Systems</span></div></div>
+    <div class="svc-c"><div class="svc-ico">🛒</div><div class="svc-nm">E-commerce + M-Pesa</div><div class="svc-ds">Online stores built to sell. M-Pesa/Paystack integration, inventory management, and abandoned cart recovery.</div><div class="svc-tags"><span class="stag">M-Pesa</span><span class="stag">Paystack</span><span class="stag">Inventory</span><span class="stag">Analytics</span></div></div>
+    <div class="svc-c"><div class="svc-ico">⛪</div><div class="svc-nm">Church &amp; NGO Platforms</div><div class="svc-ds">Complete digital homes with sermon libraries, online giving portals, event management, and member dashboards.</div><div class="svc-tags"><span class="stag">Online Giving</span><span class="stag">Events</span><span class="stag">Sermons</span><span class="stag">Members</span></div></div>
+    <div class="svc-c"><div class="svc-ico">⚙️</div><div class="svc-nm">Web Applications</div><div class="svc-ds">Custom dashboards, booking systems, CRMs, and client portals that automate operations and delight users.</div><div class="svc-tags"><span class="stag">Supabase</span><span class="stag">Firebase</span><span class="stag">Automation</span><span class="stag">Dashboards</span></div></div>
+    <div class="svc-c"><div class="svc-ico">📈</div><div class="svc-nm">SEO &amp; Growth Strategy</div><div class="svc-ds">Data-driven strategy to rank your Kenyan business on page one and compound traffic month after month.</div><div class="svc-tags"><span class="stag">Technical SEO</span><span class="stag">Content</span><span class="stag">Analytics</span><span class="stag">PostHog</span></div></div>
+  </div>
+</section>
+
+<!-- PORTFOLIO (filterable) -->
+<section id="portfolio">
+  <div class="shr rv">
+    <div>
+      <span class="s-lbl">Proven Results</span>
+      <h2 class="s-ttl">Work That Moved<br>The Numbers</h2>
+    </div>
+    <div class="pf-filters">
+      <button class="pf-filter act" onclick="filterPF('all',this)">All Work</button>
+      <button class="pf-filter" onclick="filterPF('ecom',this)">E-commerce</button>
+      <button class="pf-filter" onclick="filterPF('church',this)">Church/NGO</button>
+      <button class="pf-filter" onclick="filterPF('webapp',this)">Web Apps</button>
+      <button class="pf-filter" onclick="filterPF('webdev',this)">Websites</button>
+    </div>
+  </div>
+  <div class="pf-g">
+    <div class="pf-c rv" data-cat="ecom webapp" onclick="openCS('greenify')">
+      <div class="pf-img">
+        <img src="https://ayrtonsenna-coder.github.io/StackTechsolutions/images/Greenify-mockup.png" alt="Greenify"/>
+        <div class="pf-ov"><div class="pf-ov-btn">View Case Study ↗</div></div>
+      </div>
+      <div class="pf-body">
+        <div class="pf-cats"><span class="pf-cat">E-commerce</span><span class="pf-cat">· M-Pesa</span><span class="pf-cat">· Web App</span></div>
+        <div class="pf-ttl">Greenify — Nairobi's Plant Paradise</div>
+        <div class="pf-ds">Full e-commerce platform with 3D product visualization, M-Pesa checkout, and customer accounts.</div>
+        <div class="pf-rs"><div class="pf-r"><div class="rn">80+</div><div class="rl">Weekly orders</div></div><div class="pf-r"><div class="rn">+40%</div><div class="rl">Conversion</div></div><div class="pf-r"><div class="rn">2.1×</div><div class="rl">Revenue</div></div></div>
+      </div>
+    </div>
+    <div class="pf-c rv d1" data-cat="webapp webdev" onclick="openCS('autosphere')">
+      <div class="pf-img">
+        <img src="https://ayrtonsenna-coder.github.io/StackTechsolutions/images/autosphere.png" alt="Autosphere"/>
+        <div class="pf-ov"><div class="pf-ov-btn">View Case Study ↗</div></div>
+      </div>
+      <div class="pf-body">
+        <div class="pf-cats"><span class="pf-cat">Web App</span><span class="pf-cat">· Booking</span><span class="pf-cat">· AR</span></div>
+        <div class="pf-ttl">Autosphere — Smart Car Showroom</div>
+        <div class="pf-ds">AR virtual customization, real-time inventory, test-drive booking, and CRM-integrated lead pipeline.</div>
+        <div class="pf-rs"><div class="pf-r"><div class="rn">3×</div><div class="rl">Test drives</div></div><div class="pf-r"><div class="rn">60%</div><div class="rl">Faster close</div></div></div>
+      </div>
+    </div>
+    <div class="pf-c rv d2" data-cat="church webdev" onclick="openCS('fountain')">
+      <div class="pf-img">
+        <img src="https://ayrtonsenna-coder.github.io/StackTechsolutions/images/FGC-mockup.png" alt="Fountain Gate"/>
+        <div class="pf-ov"><div class="pf-ov-btn">View Case Study ↗</div></div>
+      </div>
+      <div class="pf-body">
+        <div class="pf-cats"><span class="pf-cat">Church Platform</span><span class="pf-cat">· Giving</span><span class="pf-cat">· Events</span></div>
+        <div class="pf-ttl">Fountain Gate Church</div>
+        <div class="pf-ds">Complete church platform with online giving, sermon archive, live stream, and member portal.</div>
+        <div class="pf-rs"><div class="pf-r"><div class="rn">500+</div><div class="rl">Members</div></div><div class="pf-r"><div class="rn">+150%</div><div class="rl">Online giving</div></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ROI CALCULATOR -->
+<section id="roi" style="background:var(--bg2)">
+  <div class="sh rv" style="text-align:center">
+    <span class="s-lbl">Expected Return</span>
+    <h2 class="s-ttl">ROI Calculator</h2>
+    <p class="s-sub" style="margin:0 auto">See the projected revenue impact a professional website could generate for your business.</p>
+  </div>
+  <div class="roi-wrap rv">
+    <div class="roi-inputs">
+      <div class="rg">
+        <label>Monthly Website Visitors (estimated): <b id="rv1v" style="color:var(--v)">500</b></label>
+        <input type="range" min="100" max="10000" step="100" value="500" oninput="roiCalc(this,'rv1v')"/>
+        <div class="roi-rv"><span>100</span><span>10,000+</span></div>
+      </div>
+      <div class="rg">
+        <label>Average Transaction Value (KES): <b id="rv2v" style="color:var(--v)">5,000</b></label>
+        <input type="range" min="500" max="100000" step="500" value="5000" oninput="roiCalc(this,'rv2v')"/>
+        <div class="roi-rv"><span>KES 500</span><span>KES 100,000</span></div>
+      </div>
+      <div class="rg">
+        <label>Current Conversion Rate: <b id="rv3v" style="color:var(--v)">1%</b></label>
+        <input type="range" min="0.5" max="10" step="0.5" value="1" oninput="roiCalc(this,'rv3v','%')"/>
+        <div class="roi-rv"><span>0.5%</span><span>10%</span></div>
+      </div>
+      <div class="rg">
+        <label>Target Conversion After Rebuild: <b id="rv4v" style="color:var(--v)">3%</b></label>
+        <input type="range" min="1" max="15" step="0.5" value="3" oninput="roiCalc(this,'rv4v','%')"/>
+        <div class="roi-rv"><span>1%</span><span>15%</span></div>
+      </div>
+    </div>
+    <div class="roi-out">
+      <div class="ro-lbl">Projected Monthly Gain</div>
+      <div class="ro-num" id="roiGain">KES 100,000</div>
+      <div class="ro-lbl" style="margin-top:.5rem">6-Month Revenue Lift</div>
+      <div class="ro-num" id="roi6m" style="font-size:1.6rem;color:var(--cy)">KES 600,000</div>
+      <div class="roi-breakdown">
+        <div class="roi-row"><span>Current monthly revenue</span><b id="roiCurr">KES 25,000</b></div>
+        <div class="roi-row"><span>Projected monthly revenue</span><b id="roiNew">KES 125,000</b></div>
+        <div class="roi-row"><span>Website investment</span><b>KES 15,000 – 120,000</b></div>
+        <div class="roi-row"><span>Payback period</span><b id="roiPB">Under 2 months</b></div>
+      </div>
+      <p class="roi-note">These are projections based on your inputs. <b>Actual results vary</b> by industry and execution. Our clients typically see 2–3× ROI within 6 months.</p>
+      <button class="btn bv btn-full" style="margin-top:1.5rem" onclick="document.getElementById('contact-lead').scrollIntoView({behavior:'smooth'})">Get My Custom ROI Analysis →</button>
+    </div>
+  </div>
+</section>
+
+<!-- AI TOOLS HUB -->
+<section id="aitools">
+  <div class="sh rv" style="text-align:center">
+    <span class="s-lbl">Free AI Tools</span>
+    <h2 class="s-ttl">Try Our AI-Powered Tools</h2>
+    <p class="s-sub" style="margin:0 auto">Powered by Claude AI — the same intelligence behind our development workflow. Get instant, expert-level analysis free.</p>
+  </div>
+  <div class="ai-grid">
+    <!-- TOOL 1: WEBSITE AUDITOR -->
+    <div class="ai-card rv">
+      <div class="ai-card-head">
+        <div class="ac-icon">🔍</div>
+        <h3>AI Website Auditor</h3>
+        <p>Get a professional audit of your website with actionable improvement recommendations — in seconds.</p>
+      </div>
+      <div class="ai-card-body">
+        <div class="aif"><label>Your Website URL or Description</label><input type="text" id="audit_url" placeholder="www.yourbusiness.co.ke or describe your site"/></div>
+        <div class="aif"><label>Business Type</label>
+          <select id="audit_type">
+            <option value="">— Select industry —</option>
+            <option>E-commerce / Retail</option>
+            <option>Church / Religious Organization</option>
+            <option>Restaurant / Food Business</option>
+            <option>Professional Services (Law, Accounting)</option>
+            <option>Real Estate</option>
+            <option>Healthcare / Clinic</option>
+            <option>School / Education</option>
+            <option>NGO / Nonprofit</option>
+            <option>Technology / Startup</option>
+            <option>Other</option>
+          </select>
+        </div>
+        <div class="aif"><label>Main Goal of Your Website</label><input type="text" id="audit_goal" placeholder="e.g. get more clients, sell products, grow congregation"/></div>
+        <button class="ai-run" id="audit_btn" onclick="runAudit()">🔍 Run Free AI Audit</button>
+        <div class="ai-loader" id="audit_loader"><div class="ai-dots"><span></span><span></span><span></span></div><p>Analyzing your site… this takes ~10 seconds</p></div>
+        <div class="ai-error" id="audit_err"></div>
+        <div class="ai-result" id="audit_result"><div class="ai-result-content" id="audit_out"></div></div>
+      </div>
+    </div>
+    <!-- TOOL 2: HEADLINE GENERATOR -->
+    <div class="ai-card rv d1">
+      <div class="ai-card-head">
+        <div class="ac-icon">✍️</div>
+        <h3>AI Headline Generator</h3>
+        <p>Generate 5 high-converting website headlines tailored to your business — stop using generic copy.</p>
+      </div>
+      <div class="ai-card-body">
+        <div class="aif"><label>Your Business / Service</label><input type="text" id="hl_biz" placeholder="e.g. Mombasa wedding photographer"/></div>
+        <div class="aif"><label>Target Customer</label><input type="text" id="hl_target" placeholder="e.g. couples planning weddings in Mombasa"/></div>
+        <div class="aif"><label>Your Unique Selling Point</label><input type="text" id="hl_usp" placeholder="e.g. cinematic style, fast delivery, affordable packages"/></div>
+        <button class="ai-run" id="hl_btn" onclick="runHeadlines()">✍️ Generate My Headlines</button>
+        <div class="ai-loader" id="hl_loader"><div class="ai-dots"><span></span><span></span><span></span></div><p>Crafting your headlines…</p></div>
+        <div class="ai-error" id="hl_err"></div>
+        <div class="ai-result" id="hl_result"><div class="ai-result-content" id="hl_out"></div></div>
+      </div>
+    </div>
+    <!-- TOOL 3: SEO KEYWORD TOOL -->
+    <div class="ai-card rv d2">
+      <div class="ai-card-head">
+        <div class="ac-icon">📊</div>
+        <h3>AI SEO Keyword Advisor</h3>
+        <p>Discover the exact keywords your Kenyan customers are searching for — and how to rank for them.</p>
+      </div>
+      <div class="ai-card-body">
+        <div class="aif"><label>Your Business Niche</label><input type="text" id="seo_niche" placeholder="e.g. plumbing services, maternity clothes"/></div>
+        <div class="aif"><label>Your City / Location</label><input type="text" id="seo_loc" placeholder="e.g. Mombasa, Nairobi, Kisumu"/></div>
+        <div class="aif"><label>Who Is Your Ideal Customer?</label><input type="text" id="seo_cust" placeholder="e.g. homeowners, pregnant women, small businesses"/></div>
+        <button class="ai-run" id="seo_btn" onclick="runSEO()">📊 Get My SEO Keywords</button>
+        <div class="ai-loader" id="seo_loader"><div class="ai-dots"><span></span><span></span><span></span></div><p>Finding your best keywords…</p></div>
+        <div class="ai-error" id="seo_err"></div>
+        <div class="ai-result" id="seo_result"><div class="ai-result-content" id="seo_out"></div></div>
+      </div>
+    </div>
+  </div>
+  <div class="rv" style="text-align:center;padding:.5rem 0">
+    <p style="font-size:.84rem;color:var(--m2)">🤖 Powered by <b style="color:var(--v)">Claude AI</b> — same technology powering StackTech's development workflow. <a href="#contact-lead" style="color:var(--v)">Want us to implement these insights for you? →</a></p>
+  </div>
+</section>
+
+<!-- MULTI-STEP LEAD FORM -->
+<section id="contact-lead" style="background:var(--bg2)">
+  <div class="sh rv" style="text-align:center;margin-bottom:2.5rem">
+    <span class="s-lbl">Start Your Project</span>
+    <h2 class="s-ttl">Get a Personalised Proposal<br>in Under 2 Hours</h2>
+    <p class="s-sub" style="margin:0 auto">3 steps. 3 minutes. We'll qualify your project and send a tailored proposal with pricing, timeline, and strategy.</p>
+  </div>
+  <div class="ff rv">
+    <div class="ff-pr"><div class="ff-prf" id="ffP" style="width:33%"></div></div>
+    <div class="ff-tabs">
+      <div class="ff-tab act" id="t1">01 — You</div>
+      <div class="ff-tab" id="t2">02 — Project</div>
+      <div class="ff-tab" id="t3">03 — Goals</div>
+    </div>
+    <div class="ff-bd">
+      <!-- STEP 1 -->
+      <div class="fp on" id="p1">
+        <div class="ft">👋 Let's start with you</div>
+        <div class="fsb">Basic details so we can reach you with a custom proposal.</div>
+        <div class="frow">
+          <div class="fg"><label class="fgl">Full Name *</label><input type="text" id="f_nm" placeholder="John Kamau"/></div>
+          <div class="fg"><label class="fgl">Business Name</label><input type="text" id="f_bz" placeholder="Kamau Enterprises"/></div>
+        </div>
+        <div class="frow">
+          <div class="fg"><label class="fgl">Email Address *</label><input type="email" id="f_em" placeholder="john@gmail.com"/></div>
+          <div class="fg"><label class="fgl">WhatsApp Number *</label><input type="tel" id="f_ph" placeholder="+254 7xx xxx xxx"/></div>
+        </div>
+        <div class="fg"><label class="fgl">How did you find us?</label>
+          <div class="pg">
+            <button class="pl" onclick="psel(this,'src')">Instagram</button>
+            <button class="pl" onclick="psel(this,'src')">WhatsApp Group</button>
+            <button class="pl" onclick="psel(this,'src')">Google</button>
+            <button class="pl" onclick="psel(this,'src')">Referral</button>
+            <button class="pl" onclick="psel(this,'src')">AI Tools above</button>
+            <button class="pl" onclick="psel(this,'src')">Other</button>
+          </div>
+        </div>
+        <div class="ff-ax">
+          <span style="font-size:.78rem;color:var(--m)">🔒 Private. Never shared or sold.</span>
+          <button class="btn bv" onclick="goS(2)">Continue — Project Details →</button>
+        </div>
+      </div>
+      <!-- STEP 2 -->
+      <div class="fp" id="p2">
+        <div class="ft">🛠 Tell us about your project</div>
+        <div class="fsb">The more detail, the more tailored your proposal will be.</div>
+        <div class="fg"><label class="fgl">Project Type *</label>
+          <div class="pg">
+            <button class="pl" onclick="psel(this,'pt')">New Website</button>
+            <button class="pl" onclick="psel(this,'pt')">Redesign</button>
+            <button class="pl" onclick="psel(this,'pt')">E-commerce</button>
+            <button class="pl" onclick="psel(this,'pt')">Web App / Dashboard</button>
+            <button class="pl" onclick="psel(this,'pt')">Church Platform</button>
+            <button class="pl" onclick="psel(this,'pt')">Maintenance Plan</button>
+          </div>
+        </div>
+        <div class="frow">
+          <div class="fg"><label class="fgl">Budget Range (KES) *</label>
+            <select id="f_bd"><option value="">— Select range —</option><option>Under 20,000</option><option>20,000 – 50,000</option><option>50,000 – 100,000</option><option>100,000 – 300,000</option><option>300,000+</option></select>
+          </div>
+          <div class="fg"><label class="fgl">Desired Timeline</label>
+            <select id="f_tl"><option value="">— When do you need it? —</option><option>ASAP (rush)</option><option>Within 2 weeks</option><option>Within a month</option><option>Flexible</option></select>
+          </div>
+        </div>
+        <div class="frow">
+          <div class="fg"><label class="fgl">Current Website (if any)</label><input type="text" id="f_url" placeholder="www.yoursite.co.ke or 'none'"/></div>
+          <div class="fg"><label class="fgl">Industry / Niche</label><input type="text" id="f_ind" placeholder="e.g. real estate, church, fashion"/></div>
+        </div>
+        <div class="ff-ax">
+          <button class="ff-bk" onclick="goS(1)">← Back</button>
+          <button class="btn bv" onclick="goS(3)">Continue — Goals &amp; Vision →</button>
+        </div>
+      </div>
+      <!-- STEP 3 -->
+      <div class="fp" id="p3">
+        <div class="ft">🎯 Goals &amp; vision</div>
+        <div class="fsb">This powers our AI qualification engine — you'll see your recommended package below.</div>
+        <div class="qual-box" id="qualB"><div class="qbt">🤖 Your Personalised Recommendation</div><div class="qbc" id="qualC">Select your primary goal below to see your recommendation.</div></div>
+        <div class="fg"><label class="fgl">Primary Business Goal *</label>
+          <div class="pg">
+            <button class="pl" onclick="psel(this,'gl');doQual()">Get more leads &amp; clients</button>
+            <button class="pl" onclick="psel(this,'gl');doQual()">Sell products online</button>
+            <button class="pl" onclick="psel(this,'gl');doQual()">Build brand credibility</button>
+            <button class="pl" onclick="psel(this,'gl');doQual()">Automate business ops</button>
+            <button class="pl" onclick="psel(this,'gl');doQual()">Grow church/community</button>
+            <button class="pl" onclick="psel(this,'gl');doQual()">Launch a startup</button>
+          </div>
+        </div>
+        <div class="fg"><label class="fgl">Must-Have Features</label>
+          <div class="pg">
+            <button class="pl" onclick="psel(this,'ft')">M-Pesa / Payment</button>
+            <button class="pl" onclick="psel(this,'ft')">Blog / CMS</button>
+            <button class="pl" onclick="psel(this,'ft')">Booking System</button>
+            <button class="pl" onclick="psel(this,'ft')">User Login / Accounts</button>
+            <button class="pl" onclick="psel(this,'ft')">AI-powered features</button>
+            <button class="pl" onclick="psel(this,'ft')">WhatsApp chat</button>
+          </div>
+        </div>
+        <div class="fg"><label class="fgl">Describe your project (free text)</label>
+          <textarea id="f_ds" placeholder="What does your business do? Who are your customers? What should the website achieve? Any inspiration sites you love?"></textarea>
+        </div>
+        <div class="ff-ax">
+          <button class="ff-bk" onclick="goS(2)">← Back</button>
+          <button class="btn bv bl" onclick="doSubmit()">Send Brief — Proposal in 2 Hours →</button>
+        </div>
+      </div>
+      <!-- SUCCESS -->
+      <div class="ff-suc" id="ffSuc">
+        <div class="fsi">🚀</div>
+        <div class="fst">Brief Received!</div>
+        <div class="fss">Our team is reviewing your project right now.<br>Expect a <b style="color:var(--v)">personalised proposal</b> in 2 hours via email or WhatsApp.<br><br>While you wait — book your free 20-min strategy call 👇</div>
+        <div class="fsa">
+          <button class="btn bv" onclick="openCal()">📅 Book Free Strategy Call</button>
+          <a href="https://wa.me/254795451238?text=Hi!%20I%20just%20submitted%20my%20project%20brief." class="btn bg" target="_blank">💬 Continue on WhatsApp</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PRICING -->
+<section id="pricing">
+  <div class="sh rv">
+    <span class="s-lbl">Transparent Pricing</span>
+    <h2 class="s-ttl">No Hidden Fees.<br>Just Results.</h2>
+    <p class="s-sub">Every package built around one goal: ROI. Payment plans available on all packages.</p>
+  </div>
+  <div class="pg-g">
+    <div class="pc rv">
+      <div class="pt">Starter</div><div class="pa"><sup>KES</sup>15K</div>
+      <div class="pcy">One-time · <span class="del">Delivered in 5–7 days</span></div>
+      <ul class="pfl"><li>Up to 5-page website</li><li>Mobile-responsive design</li><li>Contact form + WhatsApp</li><li>Google Analytics setup</li><li>Basic SEO + sitemap</li><li>1 revision round</li><li class="no">E-commerce / Payments</li><li class="no">Custom Web App</li></ul>
+      <div class="roi-tag">📈 Expected: +KES 30K–60K/month in new leads</div>
+      <button class="pb2 ot" style="margin-top:1rem" onclick="preF('Starter Package — KES 15,000')">Get Started</button>
+    </div>
+    <div class="pc hot rv d1">
+      <div class="pc-badge">MOST POPULAR</div>
+      <div class="pt">Growth</div><div class="pa"><sup>KES</sup>45K</div>
+      <div class="pcy">One-time · <span class="del">Delivered in 10–14 days</span></div>
+      <ul class="pfl"><li>Up to 15-page custom website</li><li>UI/UX design from scratch</li><li>E-commerce + M-Pesa</li><li>Blog / CMS system</li><li>Advanced SEO + schema</li><li>Lead capture + automation</li><li>WhatsApp &amp; Live chat</li><li>3 revision rounds</li></ul>
+      <div class="roi-tag">📈 Expected: +KES 100K–300K/month lift</div>
+      <button class="pb2 solid" style="margin-top:1rem" onclick="preF('Growth Package — KES 45,000')">Start Growing →</button>
+    </div>
+    <div class="pc rv d2">
+      <div class="pt">Platform</div><div class="pa"><sup>KES</sup>120K</div>
+      <div class="pcy">One-time + optional monthly retainer</div>
+      <ul class="pfl"><li>Full custom web application</li><li>User auth + client dashboards</li><li>Database + backend (Supabase)</li><li>M-Pesa / Paystack deep integration</li><li>Booking + scheduling system</li><li>Admin panel + analytics</li><li>AI-powered features</li><li>6 months priority support</li></ul>
+      <div class="roi-tag">📈 Expected: +KES 300K–1M+/month business value</div>
+      <button class="pb2 ot" style="margin-top:1rem" onclick="preF('Platform Package — KES 120,000')">Build Your Platform</button>
+    </div>
+  </div>
+  <div class="dep-b rv">
+    <div><div class="dt">🔥 Start with just a small deposit</div><div class="ds">Remove all hesitation. Start today with only <b>KES 2,000 – 5,000 deposit</b>. Balance paid on delivery.</div></div>
+    <div style="display:flex;gap:.75rem;flex-wrap:wrap"><button class="btn bo" onclick="openCal()">📅 Book Free Consultation</button><a href="https://wa.me/254795451238?text=Hi!%20I%27d%20like%20to%20start%20with%20a%20deposit." class="btn bg" target="_blank">💬 Pay Deposit via WhatsApp</a></div>
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section id="process">
+  <div class="sh rv"><span class="s-lbl">How It Works</span><h2 class="s-ttl">From Brief to Live in 4 Steps</h2></div>
+  <div class="pr-g">
+    <div class="pr-c rv"><div class="pr-n">01 · Discovery</div><div class="pr-t">Free 20-Min Strategy Call</div><div class="pr-d">We deep-dive into your business, competition, and goals. You leave with a clear roadmap — even if you don't hire us.</div></div>
+    <div class="pr-c rv d1"><div class="pr-n">02 · Design</div><div class="pr-t">Prototype Before We Build</div><div class="pr-d">Every screen is designed and prototyped in Figma. Your approval is required before a single line of code is written.</div></div>
+    <div class="pr-c rv d2"><div class="pr-n">03 · Build &amp; Test</div><div class="pr-t">Engineered for Performance</div><div class="pr-d">Clean, maintainable code. Tested across all devices. Lighthouse 90+. SEO-ready from day one. AI-enhanced workflow.</div></div>
+    <div class="pr-c rv d3"><div class="pr-n">04 · Launch &amp; Grow</div><div class="pr-t">Deployed + Fully Supported</div><div class="pr-d">We launch together. Video walkthrough, admin training, and post-launch checklist. Then your growth begins.</div></div>
+  </div>
+</section>
+
+<!-- CLIENT PORTAL -->
+<section id="portal">
+  <div class="port-wrap">
+    <div class="port-info">
+      <span class="s-lbl rv">Delivery Experience</span>
+      <h2 class="s-ttl rv d1">Your Private Client Portal</h2>
+      <p class="s-sub rv d2">No more chasing updates on WhatsApp. Every StackTech client gets a live dashboard to track their project, share files, and communicate directly with the team.</p>
+      <div class="port-feats rv d2">
+        <div class="pfi">Real-time project progress &amp; milestone tracking</div>
+        <div class="pfi">File sharing — designs, assets, deliverables</div>
+        <div class="pfi">Direct message thread with your dedicated team</div>
+        <div class="pfi">Invoice history &amp; milestone payment tracking</div>
+        <div class="pfi">Post-launch analytics dashboard</div>
+        <div class="pfi">Support ticket system for quick fixes</div>
+      </div>
+      <button class="btn bv rv d3" onclick="openPortal()">🔐 Access Client Portal →</button>
+    </div>
+    <div class="port-prev rv d2">
+      <div class="port-bar"><div class="dots"><span></span><span></span><span></span></div><div class="purl">portal.stacktech.co.ke/dashboard</div></div>
+      <div class="port-bd">
+        <div class="pch"><div class="pcn">Greenify E-commerce Rebuild</div><div class="pst">🟢 In Progress</div></div>
+        <div class="ppl"><span>Overall Progress</span><span>68%</span></div>
+        <div class="ppbar"><div class="ppbar-f"></div></div>
+        <div class="pms">
+          <div class="pm dn"><div class="pmd"></div><span>Discovery &amp; Strategy Call</span></div>
+          <div class="pm dn"><div class="pmd"></div><span>Wireframes Approved</span></div>
+          <div class="pm dn"><div class="pmd"></div><span>Design Prototype Complete</span></div>
+          <div class="pm ac"><div class="pmd"></div><span>Development — Week 2 of 3</span></div>
+          <div class="pm pd"><div class="pmd"></div><span>QA Testing &amp; Revisions</span></div>
+          <div class="pm pd"><div class="pmd"></div><span>Launch &amp; Handover</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- STACKTECH CIRCLE MEMBERSHIP -->
+<section id="circle" style="background:var(--bg2)">
+  <div class="circle-hero rv">
+    <span class="s-lbl">Recurring Revenue Model</span>
+    <h2 class="s-ttl">Join the StackTech Circle</h2>
+    <p class="s-sub" style="margin:0 auto;max-width:580px">A members-only community and toolkit for Kenyan business owners who want to keep growing online — beyond the launch.</p>
+  </div>
+  <div class="circle-wrap">
+    <div>
+      <div class="circle-card rv"><div class="cc-icon">📦</div><div class="cc-title">Monthly Website Templates</div><div class="cc-desc">Get 2–3 premium, Kenyan-market-tested website templates every month. Download, customise, and deploy.</div></div>
+      <div class="circle-card rv d1"><div class="cc-icon">🎓</div><div class="cc-title">Weekly Growth Webinars</div><div class="cc-desc">Live sessions on SEO, e-commerce, lead generation, and digital strategy — taught by StackTech's team.</div></div>
+      <div class="circle-card rv d2"><div class="cc-icon">💬</div><div class="cc-title">Private Community</div><div class="cc-desc">Members-only WhatsApp group + forum. Share wins, get feedback, and connect with fellow Kenyan business owners.</div></div>
+      <div class="circle-card rv d3"><div class="cc-icon">🛠️</div><div class="cc-title">AI Tools Access</div><div class="cc-desc">Full unlimited access to all StackTech AI tools — auditor, headline generator, keyword advisor, and more monthly additions.</div></div>
+    </div>
+    <div class="circle-price rv d1">
+      <div class="cp-badge">⭐ StackTech Circle</div>
+      <div class="cp-amount">KES 3,500<sub>/month</sub></div>
+      <div class="cp-cycle">Cancel anytime · No commitment required</div>
+      <ul class="circle-feats">
+        <li>2–3 premium templates monthly</li>
+        <li>4 live growth webinars per month</li>
+        <li>Unlimited AI tool access</li>
+        <li>Private community + forum</li>
+        <li>10% discount on all StackTech projects</li>
+        <li>Early access to new features &amp; tools</li>
+        <li>Monthly 1:1 strategy check-in call</li>
+        <li>Priority support queue</li>
+      </ul>
+      <button class="btn bv btn-full" onclick="preF('StackTech Circle Membership — KES 3,500/month')">Join the Circle →</button>
+      <p class="cp-note">🔐 Secure billing · Cancel anytime via WhatsApp</p>
+    </div>
+  </div>
+</section>
+
+<!-- MAINTENANCE PLANS -->
+<section id="maintenance">
+  <div class="sh rv"><span class="s-lbl">Post-Launch Retention</span><h2 class="s-ttl">Keep Growing After Launch</h2><p class="s-sub">A website without maintenance is a car without fuel. Our plans keep you fast, secure, and converting.</p></div>
+  <div class="mn-g">
+    <div class="mn-c rv"><div class="mn-bge">Monthly</div><div class="mn-nm">Basic Care</div><div class="mn-pr"><sup>KES </sup>3,000<sub>/mo</sub></div><div class="mn-cy">Cancel anytime</div><ul class="mn-fl"><li>Monthly security updates</li><li>Weekly automated backups</li><li>Uptime monitoring</li><li>1 content update/month</li><li>Email support</li></ul><button class="pb2 ot" onclick="preF('Basic Care Plan — KES 3,000/month')">Get Started</button></div>
+    <div class="mn-c hot rv d1"><div class="mn-bge">Best Value</div><div class="mn-nm">Growth Care</div><div class="mn-pr"><sup>KES </sup>6,500<sub>/mo</sub></div><div class="mn-cy">Priority support included</div><ul class="mn-fl"><li>Everything in Basic</li><li>5 content updates/month</li><li>SEO monitoring + monthly report</li><li>Performance optimisation</li><li>WhatsApp priority support</li><li>Quarterly strategy review</li></ul><button class="pb2 solid" onclick="preF('Growth Care Plan — KES 6,500/month')">Start Growing →</button></div>
+    <div class="mn-c rv d2"><div class="mn-bge">Enterprise</div><div class="mn-nm">Full Management</div><div class="mn-pr"><sup>KES </sup>12,000<sub>/mo</sub></div><div class="mn-cy">Dedicated account manager</div><ul class="mn-fl"><li>Everything in Growth</li><li>Unlimited content updates</li><li>Monthly landing page builds</li><li>Ad campaign management</li><li>Weekly analytics reports</li><li>24/7 emergency support</li></ul><button class="pb2 ot" onclick="preF('Full Management Plan — KES 12,000/month')">Learn More</button></div>
+  </div>
+</section>
+
+<!-- RESOURCE HUB -->
+<section id="resources" style="background:var(--bg2)">
+  <div class="shr rv">
+    <div><span class="s-lbl">Free Resources</span><h2 class="s-ttl">Guides, Templates &amp;<br>Checklists — Free</h2></div>
+    <button class="btn bg rv d1" onclick="preF('Resource Hub Access')">All Resources →</button>
+  </div>
+  <div class="res-g">
+    <div class="res-c rv" onclick="dlResource('M-Pesa Integration Checklist')"><div class="res-thumb" style="background:linear-gradient(135deg,#0a1f0a,#1a3a10)"><div class="res-thumb-bg" style="background:radial-gradient(circle at 50% 50%,#C8FF00,transparent 70%)"></div>📋</div><div class="res-body"><div class="res-type"><span class="chip chip-v">Checklist</span></div><div class="res-ttl">M-Pesa Integration Checklist for Kenyan E-commerce</div><div class="res-meta"><span>2-page PDF</span><span class="res-free">FREE</span></div></div></div>
+    <div class="res-c rv d1" onclick="dlResource('Church Website Planning Guide')"><div class="res-thumb" style="background:linear-gradient(135deg,#0d0d1f,#1a1a3a)"><div class="res-thumb-bg" style="background:radial-gradient(circle at 50% 50%,#00D9FF,transparent 70%)"></div>⛪</div><div class="res-body"><div class="res-type"><span class="chip chip-c">Guide</span></div><div class="res-ttl">Church Website Planning Guide — Kenya 2025</div><div class="res-meta"><span>12-page PDF</span><span class="res-free">FREE</span></div></div></div>
+    <div class="res-c rv d2" onclick="dlResource('SEO Starter Pack')"><div class="res-thumb" style="background:linear-gradient(135deg,#1f0f0a,#3a1a0a)"><div class="res-thumb-bg" style="background:radial-gradient(circle at 50% 50%,#FF6B2B,transparent 70%)"></div>🔍</div><div class="res-body"><div class="res-type"><span class="chip chip-o">Toolkit</span></div><div class="res-ttl">Kenya Local SEO Starter Pack — Rank on Google</div><div class="res-meta"><span>Template + Guide</span><span class="res-free">FREE</span></div></div></div>
+    <div class="res-c rv d3" onclick="dlResource('Website Brief Template')"><div class="res-thumb" style="background:linear-gradient(135deg,#140a1f,#2a1a3a)"><div class="res-thumb-bg" style="background:radial-gradient(circle at 50% 50%,#8B5CF6,transparent 70%)"></div>📝</div><div class="res-body"><div class="res-type"><span class="chip chip-p">Template</span></div><div class="res-ttl">Website Project Brief Template — Save Time</div><div class="res-meta"><span>Word + PDF</span><span class="res-free">FREE</span></div></div></div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section id="testimonials">
+  <div class="sh rv"><span class="s-lbl">Client Results</span><h2 class="s-ttl">Real Clients, Real Numbers</h2></div>
+  <div class="ts-g">
+    <div class="ts-c rv"><div class="ts-st">★★★★★</div><div class="ts-q">StackTech didn't just build us a website — they built us a sales machine. Our plant shop went from zero online sales to 80+ orders weekly. The M-Pesa checkout just works flawlessly.</div><div class="ts-au"><div class="ts-av">JN</div><div><div class="ts-nm">Jane Njoroge</div><div class="ts-rl">Founder, Greenify Nairobi</div></div></div></div>
+    <div class="ts-c rv d1"><div class="ts-st">★★★★★</div><div class="ts-q">The booking system and virtual showroom became our biggest competitive advantage. Clients explore cars from home and book a test drive instantly. Incredible work in under 3 weeks.</div><div class="ts-au"><div class="ts-av">DM</div><div><div class="ts-nm">David Mwangi</div><div class="ts-rl">CEO, Autosphere Kenya</div></div></div></div>
+    <div class="ts-c rv d2"><div class="ts-st">★★★★★</div><div class="ts-q">Our congregation grew from 200 to 500+ members. Online giving increased 150%. The AI tools they added to our site impressed everyone — and StackTech trained our entire team.</div><div class="ts-au"><div class="ts-av">PO</div><div><div class="ts-nm">Pastor Peter Otieno</div><div class="ts-rl">Lead Pastor, Fountain Gate Church</div></div></div></div>
+  </div>
+</section>
+
+<!-- REFERRAL -->
+<section id="referral" style="background:var(--bg2)">
+  <div class="ref-wrap">
+    <div class="rv"><span class="s-lbl">Referral Engine</span><h2 class="s-ttl">Earn by Referring Clients</h2><p class="s-sub" style="margin:0 auto">Every referral that becomes a client earns you a reward. Share your link. That's it.</p></div>
+    <div class="ref-cards">
+      <div class="rfc rv"><div class="rfc-n">10%</div><div class="rfc-t">Cash Commission</div><div class="rfc-d">Earn 10% of every project value when your referral signs a contract.</div></div>
+      <div class="rfc rv d1"><div class="rfc-n">Free</div><div class="rfc-t">Maintenance Month</div><div class="rfc-d">Refer 2 clients and get 1 month of Growth Care plan completely free.</div></div>
+      <div class="rfc rv d2"><div class="rfc-n">VIP</div><div class="rfc-t">Partner Status</div><div class="rfc-d">Refer 5+ clients and earn recurring commissions as an official StackTech Partner.</div></div>
+    </div>
+    <div class="ref-link-b rv">
+      <div class="rlb-t">🔗 Your Referral Link</div>
+      <div class="rlb-row">
+        <input class="rlb-inp" id="refL" value="https://stacktech.co.ke?ref=YOUR_CODE" readonly/>
+        <button class="btn bv bs rlb-copy" onclick="cpRef()">Copy Link</button>
+        <a href="https://wa.me/?text=I%20recommend%20StackTech%20for%20your%20website%3A%20https%3A%2F%2Fayrtonsenna-coder.github.io%2FStackTechsolutions%2F" class="btn bg bs" target="_blank">Share on WhatsApp</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BLOG -->
+<section id="blog">
+  <div class="shr rv"><div><span class="s-lbl">Insights</span><h2 class="s-ttl">Guides That Drive Growth</h2></div><button class="btn bg rv d1">All Articles →</button></div>
+  <div class="bl-g">
+    <div class="bl-c rv"><div class="bl-th" style="background:linear-gradient(135deg,#0d1f0d,#1a3a10)"><div class="bl-thb" style="background:radial-gradient(circle at 50%,#C8FF00,transparent 70%)"></div>💰</div><div class="bl-bd"><div class="bl-cat">Business Guide</div><div class="bl-ttl">How Much Does a Website Cost in Kenya? (2025 Complete Guide)</div><div class="bl-mt">8 min read · April 2025</div></div></div>
+    <div class="bl-c rv d1"><div class="bl-th" style="background:linear-gradient(135deg,#0d0d1f,#1a1a3a)"><div class="bl-thb" style="background:radial-gradient(circle at 50%,#00D9FF,transparent 70%)"></div>⛪</div><div class="bl-bd"><div class="bl-cat">Case Study</div><div class="bl-ttl">5 Features Every Church Website Needs in Kenya</div><div class="bl-mt">6 min read · March 2025</div></div></div>
+    <div class="bl-c rv d2"><div class="bl-th" style="background:linear-gradient(135deg,#1a0f0a,#3a1a0a)"><div class="bl-thb" style="background:radial-gradient(circle at 50%,#FF6B2B,transparent 70%)"></div>📈</div><div class="bl-bd"><div class="bl-cat">SEO Tips</div><div class="bl-ttl">How to Rank #1 on Google for Your Mombasa Business</div><div class="bl-mt">10 min read · March 2025</div></div></div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="ft-g">
+    <div><div class="ft-logo">Stack<em>Tech</em><span class="dot"></span></div><p class="ft-ds">Mombasa's leading digital studio. We engineer websites, apps, and platforms that generate leads, automate operations, and grow revenue — not just look good.</p></div>
+    <div class="ft-c"><h4>Services</h4><ul><li><a href="#services">Web Development</a></li><li><a href="#services">UI/UX Design</a></li><li><a href="#services">E-commerce</a></li><li><a href="#services">Church Websites</a></li><li><a href="#services">Web Applications</a></li><li><a href="#maintenance">Maintenance Plans</a></li></ul></div>
+    <div class="ft-c"><h4>Platform</h4><ul><li><a href="#portfolio">Our Work</a></li><li><a href="#aitools">Free AI Tools</a></li><li><a href="#circle">StackTech Circle</a></li><li><a href="#portal">Client Portal</a></li><li><a href="#resources">Resource Hub</a></li><li><a href="#referral">Refer &amp; Earn</a></li></ul></div>
+    <div class="ft-c"><h4>Contact</h4><ul><li><a href="https://wa.me/254795451238">+254 795 451 238</a></li><li><a href="mailto:ayrtonadie@gmail.com">ayrtonadie@gmail.com</a></li><li><a>Beach Rd, Mombasa 🇰🇪</a></li><li><a href="https://wa.me/254795451238" target="_blank">WhatsApp →</a></li><li><a href="#contact-lead">Start a Project →</a></li></ul></div>
+  </div>
+  <div class="ft-bot"><span>© 2025 <b>StackTech</b>. All Rights Reserved. Built with 🔥 in Mombasa.</span><span>Engineered to <b>convert</b></span></div>
+</footer>
+
+<!-- CALENDAR BOOKING MODAL -->
+<div class="cal-overlay" id="calModal">
+  <div class="cal-box">
+    <div class="cal-head"><h3>📅 Book Free Strategy Call</h3><button class="cal-close" onclick="closeCal()">✕</button></div>
+    <div class="cal-body">
+      <p class="cal-sub">20 minutes. No sales pitch. Just a clear plan for your project — pick a time slot below.</p>
+      <div class="cal-pick-lbl">This week — available slots (EAT):</div>
+      <div class="time-g">
+        <div class="ts" onclick="bookSlot(this)">Mon 9:00 AM</div>
+        <div class="ts" onclick="bookSlot(this)">Mon 11:00 AM</div>
+        <div class="ts taken">Mon 2:00 PM</div>
+        <div class="ts" onclick="bookSlot(this)">Tue 9:00 AM</div>
+        <div class="ts" onclick="bookSlot(this)">Tue 11:00 AM</div>
+        <div class="ts" onclick="bookSlot(this)">Tue 3:00 PM</div>
+        <div class="ts taken">Wed 9:00 AM</div>
+        <div class="ts" onclick="bookSlot(this)">Wed 11:00 AM</div>
+        <div class="ts" onclick="bookSlot(this)">Thu 10:00 AM</div>
+        <div class="ts" onclick="bookSlot(this)">Thu 2:00 PM</div>
+        <div class="ts" onclick="bookSlot(this)">Fri 9:00 AM</div>
+        <div class="ts taken">Fri 11:00 AM</div>
+      </div>
+      <div id="calConfirm" style="display:none;padding:1.25rem;border-radius:var(--r);background:rgba(200,255,0,.06);border:1px solid rgba(200,255,0,.2);margin-bottom:1.25rem">
+        <p style="font-size:.875rem;color:var(--m2);margin-bottom:.5rem">✅ Selected: <b id="selSlot" style="color:var(--v)"></b></p>
+        <p style="font-size:.82rem;color:var(--m)">Click confirm below and we'll send you a WhatsApp confirmation.</p>
+      </div>
+      <button class="btn bv btn-full" id="confirmBtn" style="display:none" onclick="confirmBook()">Confirm This Slot →</button>
+    </div>
+  </div>
+</div>
+
+<!-- CASE STUDY MODAL -->
+<div class="cs-overlay" id="csModal">
+  <div class="cs-box">
+    <div class="cs-head"><h3 id="cs-ttl">Case Study</h3><button class="cal-close" onclick="closeCS()">✕</button></div>
+    <div class="cs-body" id="cs-content"></div>
+  </div>
+</div>
+
+<!-- CLIENT PORTAL LOGIN MODAL -->
+<div class="cal-overlay" id="portalModal">
+  <div class="cal-box" style="max-width:460px">
+    <div class="cal-head"><h3>🔐 Client Portal Login</h3><button class="cal-close" onclick="closePortal()">✕</button></div>
+    <div class="cal-body">
+      <p class="cal-sub">Access your project dashboard, files, invoices, and messages.</p>
+      <div class="aif"><label>Email Address</label><input type="email" id="p_email" placeholder="you@email.com"/></div>
+      <div class="aif"><label>Password</label><input type="password" id="p_pw" placeholder="••••••••"/></div>
+      <button class="btn bv btn-full" style="margin-top:1rem" onclick="portalLogin()">Sign In to Dashboard →</button>
+      <p style="text-align:center;margin-top:1.25rem;font-size:.8rem;color:var(--m)">No account? <a style="color:var(--v);cursor:pointer" onclick="closePortal();document.getElementById('contact-lead').scrollIntoView({behavior:'smooth'})">Start a project first →</a></p>
+    </div>
+  </div>
+</div>
+
+<!-- RESOURCE DOWNLOAD MODAL -->
+<div class="cal-overlay" id="resModal">
+  <div class="cal-box" style="max-width:480px">
+    <div class="cal-head"><h3 id="res-ttl">📥 Get Free Resource</h3><button class="cal-close" onclick="closeRes()">✕</button></div>
+    <div class="cal-body">
+      <p class="cal-sub">Enter your email and we'll send it directly to your inbox + WhatsApp.</p>
+      <div class="aif"><label>Your Name</label><input type="text" id="r_nm" placeholder="John Kamau"/></div>
+      <div class="aif"><label>Email Address</label><input type="email" id="r_em" placeholder="john@gmail.com"/></div>
+      <div class="aif"><label>WhatsApp (optional)</label><input type="tel" id="r_ph" placeholder="+254 7xx xxx xxx"/></div>
+      <button class="btn bv btn-full" style="margin-top:.75rem" onclick="sendResource()">📥 Send Me This Free Resource →</button>
+    </div>
+  </div>
+</div>
+
+<!-- FLOATING BUTTONS -->
+<a href="https://wa.me/254795451238?text=Hi%20StackTech!" class="wa-fl" target="_blank" title="WhatsApp"><div class="wa-ring"></div><svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg></a>
+<button class="book-fl" id="bfl" onclick="openCal()">📅 Book Free Call</button>
+<div class="stk" id="stk"><div class="stk-t"><b>Ready?</b> Get a proposal in under 2 hours.</div><div class="stk-a"><button class="btn bg bs" onclick="openCal()">Book Call</button><button class="btn bv bs" onclick="document.getElementById('contact-lead').scrollIntoView({behavior:'smooth'})">Start Project →</button></div></div>
+
+<script>
+/* ═══════════════ EMAILJS ═══════════════ */
+try{ emailjs.init('YOUR_PUBLIC_KEY'); }catch(e){}
+
+/* ═══════════════ BANNER COUNTDOWN ═══════════════ */
+function closeBanner(){ document.getElementById('flash').style.display='none'; document.body.classList.add('no-flash'); document.getElementById('nav').style.top='0'; }
+(function(){
+  const now=new Date(), end=new Date(now); end.setHours(23,59,59,999);
+  function tick(){ const diff=end-new Date(); if(diff<=0){ closeBanner(); return; } const h=Math.floor(diff/3600000),m=Math.floor((diff%3600000)/60000),s=Math.floor((diff%60000)/1000); document.getElementById('fh').textContent=String(h).padStart(2,'0'); document.getElementById('fm').textContent=String(m).padStart(2,'0'); document.getElementById('fs2').textContent=String(s).padStart(2,'0'); }
+  tick(); setInterval(tick,1000);
+})();
+
+/* ═══════════════ SCROLL / PROGRESS ═══════════════ */
+const pb=document.getElementById('pb'),nav=document.getElementById('nav'),stk=document.getElementById('stk'),bfl=document.getElementById('bfl');
+window.addEventListener('scroll',()=>{
+  const y=scrollY,h=document.body.scrollHeight-innerHeight;
+  pb.style.width=(y/h*100)+'%';
+  nav.classList.toggle('solid',y>50);
+  stk.classList.toggle('up',y>700);
+  bfl.classList.toggle('show',y>700);
+  document.querySelectorAll('section[id]').forEach(s=>{
+    const lnk=document.querySelector(`.nav-ul a[href="#${s.id}"]`);
+    if(lnk) lnk.classList.toggle('act',y>=s.offsetTop-120&&y<s.offsetTop+s.offsetHeight-120);
+  });
+});
+
+/* ═══════════════ TYPEWRITER ═══════════════ */
+const words=['paying customers','loyal brand fans','qualified leads','booked appointments','revenue streams','happy repeat clients'];
+let wi=0,ci=0,del=false;
+const tw=document.getElementById('tw');
+function typ(){const w=words[wi];if(!del){tw.textContent=w.slice(0,++ci);if(ci===w.length){del=true;setTimeout(typ,2400);return;}}else{tw.textContent=w.slice(0,--ci);if(ci===0){del=false;wi=(wi+1)%words.length;}}setTimeout(typ,del?50:78);}
+setTimeout(typ,1400);
+
+/* ═══════════════ COUNTER ANIMATIONS ═══════════════ */
+const co=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){const t=parseInt(e.target.dataset.count),s=e.target.dataset.sfx||'';let n=0;const si=setInterval(()=>{n=Math.min(n+t/35,t);e.target.textContent=Math.floor(n)+s;if(n>=t)clearInterval(si);},35);co.unobserve(e.target);}}),{threshold:.5});
+document.querySelectorAll('[data-count]').forEach(el=>co.observe(el));
+
+/* ═══════════════ REVEAL ═══════════════ */
+const ro=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('vi');ro.unobserve(e.target);}}),{threshold:.08});
+document.querySelectorAll('.rv').forEach(el=>ro.observe(el));
+
+/* ═══════════════ MOBILE MENU ═══════════════ */
+function openMob(){document.getElementById('mobM').classList.add('on')}
+function closeMob(){document.getElementById('mobM').classList.remove('on')}
+
+/* ═══════════════ UTM DETECTION ═══════════════ */
+(function(){
+  const p=new URLSearchParams(location.search);
+  const src=p.get('utm_source')||p.get('ref')||'';
+  if(!src)return;
+  const s=src.toLowerCase();
+  const banner=document.getElementById('flash');
+  const bt=banner.querySelector('.fl-text');
+  if(s.includes('instagram')||s.includes('ig')){bt.innerHTML='<span>👋 Welcome from <b>Instagram</b>! Mention "IG2025" for <b>15% off</b> your first project.</span>';banner.style.display='flex';}
+  else if(s.includes('whatsapp')||s.includes('wa')){bt.innerHTML='<span>👋 Welcome! You qualify for a <b>free strategy session</b> this week via WhatsApp.</span>';banner.style.display='flex';}
+})();
+
+/* ═══════════════ PORTFOLIO FILTER ═══════════════ */
+function filterPF(cat,btn){
+  document.querySelectorAll('.pf-filter').forEach(b=>b.classList.remove('act'));
+  btn.classList.add('act');
+  document.querySelectorAll('.pf-c').forEach(c=>{
+    const cats=c.dataset.cat||'';
+    c.classList.toggle('hide',cat!=='all'&&!cats.includes(cat));
+  });
+}
+
+/* ═══════════════ ROI CALCULATOR ═══════════════ */
+let roiVals={v:500,av:5000,cr:1,tcr:3};
+function roiCalc(inp,lbl,sfx){
+  const key=inp.id.replace('input','');
+  const v=parseFloat(inp.value);
+  document.getElementById(lbl).textContent=sfx?v+sfx:v.toLocaleString('en-KE');
+  if(lbl==='rv1v')roiVals.v=v;
+  else if(lbl==='rv2v')roiVals.av=v;
+  else if(lbl==='rv3v')roiVals.cr=v;
+  else if(lbl==='rv4v')roiVals.tcr=v;
+  const curr=Math.round(roiVals.v*(roiVals.cr/100)*roiVals.av);
+  const proj=Math.round(roiVals.v*(roiVals.tcr/100)*roiVals.av);
+  const gain=proj-curr;
+  const fmt=n=>'KES '+Math.round(n).toLocaleString('en-KE');
+  document.getElementById('roiGain').textContent=fmt(gain);
+  document.getElementById('roi6m').textContent=fmt(gain*6);
+  document.getElementById('roiCurr').textContent=fmt(curr);
+  document.getElementById('roiNew').textContent=fmt(proj);
+  const invest=45000,pb=gain>0?Math.ceil(invest/gain):99;
+  document.getElementById('roiPB').textContent=pb<=1?'Under 1 month':pb<=3?`About ${pb} months`:`About ${pb} months`;
+}
+// bind all range inputs
+document.querySelectorAll('#roi input[type=range]').forEach((inp,i)=>{
+  const keys=['rv1v','rv2v','rv3v','rv4v'],sfxs=[null,null,'%','%'];
+  inp.setAttribute('oninput',`roiCalc(this,'${keys[i]}'${sfxs[i]?`,'${sfxs[i]}'`:''})`);
+});
+roiCalc({value:500,id:''},'rv1v');
+
+/* ═══════════════ AI TOOLS ═══════════════ */
+async function callAI(prompt){
+  const resp=await fetch('https://api.anthropic.com/v1/messages',{
+    method:'POST',
+    headers:{'Content-Type':'application/json'},
+    body:JSON.stringify({
+      model:'claude-sonnet-4-20250514',
+      max_tokens:1000,
+      messages:[{role:'user',content:prompt}]
+    })
+  });
+  const data=await resp.json();
+  if(data.error) throw new Error(data.error.message);
+  return data.content[0].text;
+}
+function aiUI(run,load,err,res,out,on){
+  document.getElementById(run).disabled=on;
+  document.getElementById(run).textContent=on?'Analyzing…':'🔍 Run again';
+  document.getElementById(load).classList.toggle('show',on);
+  document.getElementById(err).classList.remove('show');
+  document.getElementById(res).classList.remove('show');
+}
+async function runAudit(){
+  const url=document.getElementById('audit_url').value.trim();
+  const type=document.getElementById('audit_type').value;
+  const goal=document.getElementById('audit_goal').value.trim();
+  if(!url||!type){alert('Please enter your website and select your business type.');return;}
+  aiUI('audit_btn','audit_loader','audit_err','audit_result','audit_out',true);
+  const prompt=`You are a senior web consultant specializing in Kenyan businesses. Audit this website/business for conversion optimization.
+
+Website/Description: ${url}
+Business Type: ${type}
+Primary Goal: ${goal||'generate leads and grow the business'}
+
+Provide a structured audit with:
+1. OVERALL SCORE: /100 (be realistic, score on conversion, UX, SEO, mobile, speed)
+2. TOP 5 ISSUES: specific problems holding this site back (be direct and honest)
+3. TOP 5 RECOMMENDATIONS: actionable improvements with expected impact
+4. QUICK WINS: 2-3 things they can fix this week for immediate impact
+5. KENYA-SPECIFIC TIPS: insights relevant to the Kenyan market (M-Pesa, mobile usage, etc.)
+
+Be specific, professional, and genuinely helpful. Format with clear sections.`;
+  try{
+    const text=await callAI(prompt);
+    document.getElementById('audit_out').textContent=text;
+    document.getElementById('audit_result').classList.add('show');
+    document.getElementById('audit_btn').textContent='🔍 Run New Audit';
+  }catch(e){
+    document.getElementById('audit_err').textContent='⚠️ AI service temporarily unavailable. Please try again or contact us on WhatsApp for a manual audit.';
+    document.getElementById('audit_err').classList.add('show');
+    document.getElementById('audit_btn').textContent='🔍 Run Free AI Audit';
+  }
+  document.getElementById('audit_btn').disabled=false;
+  document.getElementById('audit_loader').classList.remove('show');
+}
+async function runHeadlines(){
+  const biz=document.getElementById('hl_biz').value.trim();
+  const target=document.getElementById('hl_target').value.trim();
+  const usp=document.getElementById('hl_usp').value.trim();
+  if(!biz){alert('Please describe your business.');return;}
+  aiUI('hl_btn','hl_loader','hl_err','hl_result','hl_out',true);
+  const prompt=`You are a world-class copywriter specializing in conversion-focused headlines for Kenyan businesses.
+
+Business: ${biz}
+Target Customer: ${target||'Kenyan consumers'}
+Unique Selling Point: ${usp||'quality and reliability'}
+
+Generate 5 compelling website hero headlines. For each headline:
+- Write the headline (powerful, specific, benefit-focused)
+- Explain WHY it works (psychology, specificity, urgency, etc.)
+- Rate its likely conversion impact (Low/Medium/High/Very High)
+
+Make them specific to Kenya and the business context. Avoid generic phrases like "We are the best." Focus on customer outcomes and transformation.`;
+  try{
+    const text=await callAI(prompt);
+    document.getElementById('hl_out').textContent=text;
+    document.getElementById('hl_result').classList.add('show');
+    document.getElementById('hl_btn').textContent='✍️ Generate New Headlines';
+  }catch(e){
+    document.getElementById('hl_err').textContent='⚠️ AI service temporarily unavailable. Try again or WhatsApp us.';
+    document.getElementById('hl_err').classList.add('show');
+    document.getElementById('hl_btn').textContent='✍️ Generate My Headlines';
+  }
+  document.getElementById('hl_btn').disabled=false;
+  document.getElementById('hl_loader').classList.remove('show');
+}
+async function runSEO(){
+  const niche=document.getElementById('seo_niche').value.trim();
+  const loc=document.getElementById('seo_loc').value.trim();
+  const cust=document.getElementById('seo_cust').value.trim();
+  if(!niche){alert('Please enter your business niche.');return;}
+  aiUI('seo_btn','seo_loader','seo_err','seo_result','seo_out',true);
+  const prompt=`You are a Kenya-specialist SEO expert. Help this business rank on Google.
+
+Business Niche: ${niche}
+Location: ${loc||'Kenya'}
+Target Customer: ${cust||'Kenyan consumers'}
+
+Provide:
+1. TOP 10 KEYWORDS to target (include search intent: Informational/Commercial/Transactional)
+2. DIFFICULTY RATING for each (Easy/Medium/Hard to rank for)
+3. CONTENT IDEAS: 5 blog post titles that would rank for these keywords
+4. LOCAL SEO TIPS: 3 specific actions to rank in ${loc||'Kenya'} Google searches
+5. QUICK WIN: The single most impactful thing they can do this week for SEO
+
+Format clearly with labels. Be specific to the Kenyan market.`;
+  try{
+    const text=await callAI(prompt);
+    document.getElementById('seo_out').textContent=text;
+    document.getElementById('seo_result').classList.add('show');
+    document.getElementById('seo_btn').textContent='📊 Get New Keywords';
+  }catch(e){
+    document.getElementById('seo_err').textContent='⚠️ AI service temporarily unavailable. Try again or WhatsApp us.';
+    document.getElementById('seo_err').classList.add('show');
+    document.getElementById('seo_btn').textContent='📊 Get My SEO Keywords';
+  }
+  document.getElementById('seo_btn').disabled=false;
+  document.getElementById('seo_loader').classList.remove('show');
+}
+
+/* ═══════════════ MULTI-STEP FORM ═══════════════ */
+let cs=1;
+function goS(n){
+  if(n>1&&cs===1){if(!document.getElementById('f_nm').value.trim()){alert('Please enter your name.');return;}if(!document.getElementById('f_em').value.trim()){alert('Please enter your email.');return;}if(!document.getElementById('f_ph').value.trim()){alert('Please enter your WhatsApp number.');return;}}
+  if(n>2&&cs===2){if(!document.getElementById('f_bd').value){alert('Please select a budget range.');return;}}
+  [1,2,3].forEach(i=>{const p=document.getElementById('p'+i);if(p)p.classList.remove('on');const t=document.getElementById('t'+i);if(t)t.className='ff-tab';});
+  document.getElementById('p'+n).classList.add('on');
+  document.getElementById('t'+n).className='ff-tab act';
+  for(let i=1;i<n;i++) document.getElementById('t'+i).className='ff-tab dn';
+  document.getElementById('ffP').style.width=(n/3*100)+'%';
+  cs=n;
+  document.getElementById('contact-lead').scrollIntoView({behavior:'smooth',block:'start'});
+}
+function psel(btn,grp){document.querySelectorAll(`[onclick*="'${grp}'"]`).forEach(b=>b.classList.remove('on'));btn.classList.add('on');}
+function doQual(){
+  const bd=document.getElementById('f_bd').value;
+  const gl=document.querySelector(`[onclick*="'gl'"].on`);
+  let rec='';
+  if(bd.includes('Under')||bd.includes('20,000'))rec=`We recommend the <strong style="color:var(--v)">Starter Package (KES 15,000)</strong> — a professional site that builds credibility and starts generating leads immediately. Perfect for your budget and goals.`;
+  else if(bd.includes('50,000')||bd.includes('100,000'))rec=`Your budget fits perfectly with our <strong style="color:var(--v)">Growth Package (KES 45,000)</strong> — includes e-commerce, M-Pesa, SEO, and lead automation. This is our most popular package for fast ROI.`;
+  else rec=`For your goals and budget, the <strong style="color:var(--v)">Platform Package (KES 120,000)</strong> builds a complete digital business system — automating operations, managing clients, and handling payments end-to-end.`;
+  document.getElementById('qualC').innerHTML=rec;
+  document.getElementById('qualB').classList.add('show');
+}
+async function doSubmit(){
+  const nm=document.getElementById('f_nm').value.trim(),em=document.getElementById('f_em').value.trim(),ph=document.getElementById('f_ph').value.trim();
+  const bz=document.getElementById('f_bz').value.trim(),bd=document.getElementById('f_bd').value,tl=document.getElementById('f_tl').value;
+  const ds=document.getElementById('f_ds').value.trim(),url=document.getElementById('f_url').value.trim();
+  if(!nm||!em||!ph){alert('Please complete Step 1 first.');goS(1);return;}
+  const btn=event.target; btn.textContent='Sending…'; btn.disabled=true;
+  try{
+    await emailjs.send('YOUR_SERVICE_ID','YOUR_TEMPLATE_ID',{from_name:nm,from_email:em,phone:ph,business:bz,budget:bd,timeline:tl,description:ds,website:url,to_email:'ayrtonadie@gmail.com'});
+  }catch(e){
+    const wa=`Hi StackTech! New project brief:\n👤 ${nm}\n📧 ${em}\n📱 ${ph}\n💼 ${bz||'N/A'}\n💰 ${bd}\n⏰ ${tl}\n🔗 ${url||'None'}\n\n📝 ${ds}`;
+    window.open('https://wa.me/254795451238?text='+encodeURIComponent(wa),'_blank');
+  }
+  document.querySelectorAll('.ff-pr,.ff-tabs,.fp').forEach(el=>el.style.display='none');
+  document.getElementById('ffSuc').classList.add('on');
+  btn.textContent='Sent!'; btn.disabled=false;
+}
+function preF(pkg){document.getElementById('f_ds').value=`Interested in: ${pkg}\n\nPlease send a detailed proposal.`;document.getElementById('contact-lead').scrollIntoView({behavior:'smooth'});}
+
+/* ═══════════════ BOOKING MODAL ═══════════════ */
+function openCal(){document.getElementById('calModal').classList.add('on')}
+function closeCal(){document.getElementById('calModal').classList.remove('on')}
+function bookSlot(el){
+  document.querySelectorAll('.ts').forEach(t=>t.classList.remove('sel'));
+  el.classList.add('sel');
+  document.getElementById('selSlot').textContent=el.textContent;
+  document.getElementById('calConfirm').style.display='block';
+  document.getElementById('confirmBtn').style.display='block';
+}
+function confirmBook(){
+  const slot=document.getElementById('selSlot').textContent;
+  closeCal();
+  window.open(`https://wa.me/254795451238?text=Hi%20StackTech!%20I%27d%20like%20to%20confirm%20my%20free%20strategy%20call%20for%20${encodeURIComponent(slot)}%20(EAT).%20My%20name%20is%20[Your%20Name].`,'_blank');
+}
+
+/* ═══════════════ CASE STUDY MODAL ═══════════════ */
+const csData={
+  greenify:{title:'Greenify — Nairobi Plant Paradise',img:'https://ayrtonsenna-coder.github.io/StackTechsolutions/images/Greenify-mockup.png',stats:[{n:'80+',l:'Weekly Orders'},{n:'+40%',l:'Conversion Rate'},{n:'2.1×',l:'Revenue Growth'}],challenge:'Greenify had beautiful products but zero online presence. Sales were 100% in-person at their Nairobi market stall. They needed to reach customers across Kenya.',solution:'Built a full e-commerce platform with 3D product visualization, M-Pesa Daraja API integration, inventory management, automated order emails, and a customer account system.',features:['M-Pesa Daraja API v2 integration','3D product viewer with custom photography','Automated order confirmation + delivery tracking','Customer loyalty points system','Instagram feed integration for social proof'],result:'Within 6 weeks of launch: 80+ weekly orders, customer base expanded from Nairobi only to 8 counties across Kenya, 2.1× revenue growth.'},
+  autosphere:{title:'Autosphere — AR Car Showroom',img:'https://ayrtonsenna-coder.github.io/StackTechsolutions/images/autosphere.png',stats:[{n:'3×',l:'Test Drive Bookings'},{n:'60%',l:'Faster Close Time'},{n:'45+',l:'Monthly Leads'}],challenge:'A Nairobi car dealership struggling to compete with larger showrooms. Low foot traffic and no way for customers to explore inventory remotely.',solution:'Built an interactive AR car showroom with virtual colour customization, real-time inventory sync, online test-drive booking system, and a CRM-integrated lead pipeline.',features:['AR virtual colour/trim customizer','Online test-drive scheduling','Real-time inventory with filtering','Lead scoring + CRM integration','WhatsApp lead notification system'],result:'Test drive bookings tripled in month one. Sales cycle shortened by 60%. The AR feature became their main marketing talking point.'},
+  fountain:{title:'Fountain Gate Church',img:'https://ayrtonsenna-coder.github.io/StackTechsolutions/images/FGC-mockup.png',stats:[{n:'500+',l:'Active Members'},{n:'+150%',l:'Online Giving'},{n:'2,000+',l:'Sermon Streams/mo'}],challenge:'A fast-growing Mombasa church with no digital presence. They were losing track of members and couldn\'t reach people outside Sunday service.',solution:'Built a complete church platform with online giving (M-Pesa + bank), sermon library with streaming, event calendar, member directory, and a deacon management system.',features:['M-Pesa + bank transfer giving portal','Sermon library with audio/video streaming','Event management + RSVP system','Member directory + cell group management','Weekly newsletter automation'],result:'Congregation grew from 200 to 500+ active members in 8 months. Online giving increased 150%, funding two new outreach programs.'}
+};
+function openCS(key){
+  const d=csData[key]; if(!d)return;
+  document.getElementById('cs-ttl').textContent=d.title;
+  document.getElementById('cs-content').innerHTML=`<div class="cs-img"><img src="${d.img}" alt="${d.title}"/></div><div class="cs-stats">${d.stats.map(s=>`<div class="cs-stat"><div class="css-n">${s.n}</div><div class="css-l">${s.l}</div></div>`).join('')}</div><div class="cs-section"><h4>The Challenge</h4><p>${d.challenge}</p></div><div class="cs-section"><h4>Our Solution</h4><p>${d.solution}</p></div><div class="cs-section"><h4>Key Features Built</h4><ul>${d.features.map(f=>`<li>${f}</li>`).join('')}</ul></div><div class="cs-section"><h4>The Result</h4><p>${d.result}</p></div><div style="margin-top:2rem"><button class="btn bv btn-full" onclick="closeCS();preF('Similar project to ${d.title}')">Build Something Like This →</button></div>`;
+  document.getElementById('csModal').classList.add('on');
+}
+function closeCS(){document.getElementById('csModal').classList.remove('on')}
+
+/* ═══════════════ PORTAL / RESOURCE MODALS ═══════════════ */
+function openPortal(){document.getElementById('portalModal').classList.add('on')}
+function closePortal(){document.getElementById('portalModal').classList.remove('on')}
+function portalLogin(){const e=document.getElementById('p_email').value;if(!e){alert('Please enter your email.');return;}alert(`📩 Portal access sent to ${e}\n\nIf you're an active client, check your inbox within 5 minutes.`);closePortal();}
+let curRes='';
+function dlResource(nm){curRes=nm;document.getElementById('res-ttl').textContent='📥 Get: '+nm;document.getElementById('resModal').classList.add('on');}
+function closeRes(){document.getElementById('resModal').classList.remove('on')}
+function sendResource(){
+  const em=document.getElementById('r_em').value.trim(),nm=document.getElementById('r_nm').value.trim();
+  if(!em){alert('Please enter your email.');return;}
+  closeRes();
+  window.open(`https://wa.me/254795451238?text=Hi!%20I%27d%20like%20the%20free%20resource%3A%20${encodeURIComponent(curRes)}.%20My%20email%20is%20${encodeURIComponent(em)}.%20Name%3A%20${encodeURIComponent(nm||'Not provided')}`,'_blank');
+}
+
+/* ═══════════════ REFERRAL COPY ═══════════════ */
+function cpRef(){
+  navigator.clipboard.writeText(document.getElementById('refL').value).then(()=>{
+    const b=document.querySelector('.rlb-copy'); b.textContent='✓ Copied!';
+    setTimeout(()=>b.textContent='Copy Link',2200);
+  });
+}
+
+/* ═══════════════ CLOSE ALL MODALS ON BACKDROP ═══════════════ */
+document.querySelectorAll('.cal-overlay,.cs-overlay').forEach(m=>{
+  m.addEventListener('click',e=>{if(e.target===m)m.classList.remove('on');});
+});
+</script>
+</body>
+</html>
