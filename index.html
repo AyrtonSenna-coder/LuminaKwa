@@ -3,14 +3,12 @@
 <head>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
-<title>LuminaKwa Digital</title>
-<meta name="description" content="LuminaKwa Digital builds strategic digital growth systems for Kenyan businesses. Not just websites — revenue engines, lead machines, and community platforms."/>
-<meta property="og:title" content="LuminaKwa Digital | Digital Platforms That Generate Revenue"/>
-<meta name="theme-color" content="#04080F"/>
+<title>LuminaKwa Digital — We Engineer Revenue · Mombasa, Kenya</title>
+<meta name="description" content="LuminaKwa Digital builds strategic digital growth systems for Kenyan businesses. Revenue engines, lead machines, and community platforms."/>
 <link rel="preconnect" href="https://fonts.googleapis.com"/>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet"/>
-<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Clash+Display:wght@400;500;600;700&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="style.css" >
 </head>
 <body>
 
@@ -18,61 +16,75 @@
 <div id="cr"></div>
 <div id="spb"></div>
 
-<!-- ════ NAV ════ -->
+<!-- WAVE CANVAS -->
+<canvas id="wave-canvas"></canvas>
+
+<!-- URGENCY BANNER -->
+<div class="urgency" id="urgency">
+  <span>⚡ <span class="gold">Limited — 3 project slots open this month.</span> &nbsp;Mention <span class="teal">"LUMINA2025"</span> for a free growth audit + 15% off.</span>
+  <button class="urgency-x" onclick="closeUrgency()">✕</button>
+</div>
+
+<!-- NAV -->
 <nav id="nav">
   <a href="#hero" class="nav-brand">
-    <!-- LK Logo SVG — recreated from your logo -->
-    <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <!-- LK Logo -->
+    <svg class="lk-mark" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
       <defs>
-        <linearGradient id="lkNav" x1="0" y1="0" x2="42" y2="42" gradientUnits="userSpaceOnUse">
-          <stop offset="0%" stop-color="#0A2647"/>
-          <stop offset="100%" stop-color="#0D3060"/>
+        <linearGradient id="lkg1" x1="0" y1="0" x2="40" y2="40" gradientUnits="userSpaceOnUse">
+          <stop offset="0%" stop-color="#0A3060"/>
+          <stop offset="100%" stop-color="#0D4080"/>
         </linearGradient>
-        <radialGradient id="lkGlow" cx="45%" cy="55%" r="35%">
-          <stop offset="0%" stop-color="#00D4FF" stop-opacity=".9"/>
-          <stop offset="100%" stop-color="#00AADD" stop-opacity="0"/>
+        <radialGradient id="lkg2" cx="46%" cy="54%" r="38%">
+          <stop offset="0%" stop-color="#00E5C0" stop-opacity="1"/>
+          <stop offset="60%" stop-color="#00E5C0" stop-opacity=".3"/>
+          <stop offset="100%" stop-color="#00E5C0" stop-opacity="0"/>
         </radialGradient>
-        <filter id="lkBlur"><feGaussianBlur stdDeviation="2" result="blur"/></filter>
+        <filter id="gf"><feGaussianBlur stdDeviation="1.5"/></filter>
       </defs>
-      <!-- L letterform -->
-      <rect x="4" y="6" width="9" height="30" rx="1" fill="url(#lkNav)"/>
-      <rect x="4" y="30" width="18" height="6" rx="1" fill="url(#lkNav)"/>
-      <!-- K letterform -->
-      <rect x="20" y="6" width="9" height="30" rx="1" fill="url(#lkNav)"/>
-      <polygon points="20,21 36,6 42,6 26,21 42,36 36,36" fill="url(#lkNav)"/>
-      <!-- Glow burst at intersection -->
-      <ellipse cx="19" cy="22" rx="7" ry="7" fill="url(#lkGlow)" filter="url(#lkBlur)"/>
-      <ellipse cx="19" cy="22" rx="3" ry="3" fill="#00D4FF" opacity=".85"/>
-      <!-- Circuit traces on K -->
-      <line x1="30" y1="10" x2="36" y2="8" stroke="#29B6F6" stroke-width=".8" opacity=".5"/>
-      <line x1="32" y1="13" x2="38" y2="12" stroke="#29B6F6" stroke-width=".8" opacity=".4"/>
-      <circle cx="36" cy="8" r="1.2" fill="#29B6F6" opacity=".5"/>
-      <circle cx="38" cy="12" r="1.2" fill="#29B6F6" opacity=".4"/>
+      <!-- L -->
+      <rect x="3" y="5" width="8" height="28" rx="1.2" fill="url(#lkg1)"/>
+      <rect x="3" y="29" width="17" height="6" rx="1.2" fill="url(#lkg1)"/>
+      <!-- K -->
+      <rect x="18" y="5" width="8" height="28" rx="1.2" fill="url(#lkg1)"/>
+      <polygon points="18,20 33,5 39,5 24,20 39,35 33,35" fill="url(#lkg1)"/>
+      <!-- Glow burst -->
+      <ellipse cx="17.5" cy="20.5" rx="8" ry="8" fill="url(#lkg2)" filter="url(#gf)"/>
+      <ellipse cx="17.5" cy="20.5" rx="2.5" ry="2.5" fill="#00E5C0"/>
+      <!-- Circuit on K -->
+      <line x1="27" y1="9" x2="32" y2="7" stroke="#00E5C0" stroke-width=".7" opacity=".5"/>
+      <line x1="28.5" y1="12" x2="34" y2="10.5" stroke="#00E5C0" stroke-width=".7" opacity=".4"/>
+      <circle cx="32" cy="7" r="1.1" fill="#00E5C0" opacity=".55"/>
+      <circle cx="34" cy="10.5" r="1.1" fill="#00E5C0" opacity=".4"/>
     </svg>
     <div class="nav-wordmark">
-      <span><span class="luma">Lumina</span><span class="kwa">Kwa</span></span>
-      <span class="dig">Digital</span>
+      <div class="nw-main"><span class="lu">Lumina</span><span class="kwa">Kwa</span></div>
+      <div class="nw-sub">Digital</div>
     </div>
   </a>
-  <div class="nav-live">
-    <span>NBI</span>
+
+  <div class="nav-pill">
+    <span class="dot"></span>
     <span id="clk">--:--</span>
+    <span style="color:var(--fog2);font-size:.6rem">NBI</span>
   </div>
+
   <ul class="nav-ul">
-    <li><a href="engines">Systems</a></li>
-    <li><a href="cases">Work</a></li>
-    <li><a href="aitools">AI Tools</a></li>
-    <li><a href="pricing">Pricing</a></li>
-    <li><a href="contact">Contact</a></li>
+    <li><a href="#engines">Systems</a></li>
+    <li><a href="#cases">Work</a></li>
+    <li><a href="#aitools">AI Tools</a></li>
+    <li><a href="#pricing">Pricing</a></li>
+    <li><a href="#contact">Contact</a></li>
   </ul>
+
   <div class="nav-r">
-    <a href="https://wa.me/254795451238" class="btn-ghost" style="font-size:.8rem;padding:.52rem 1.1rem" target="_blank">WhatsApp</a>
-    <button class="btn-cyan" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Book Strategy Call →</button>
+    <a href="https://wa.me/254795451238" class="btn-glass" target="_blank">WhatsApp</a>
+    <button class="btn-teal" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Book Free Call →</button>
     <button class="ham" id="ham" onclick="openMob()"><span></span><span></span><span></span></button>
   </div>
 </nav>
 
-<!-- MOBILE NAV -->
+<!-- MOB -->
 <div class="mob" id="mob">
   <button class="mob-x" onclick="closeMob()">✕</button>
   <a href="#engines" onclick="closeMob()">Systems</a>
@@ -82,48 +94,57 @@
   <a href="#contact" onclick="closeMob()">Contact</a>
 </div>
 
-<!-- ════ HERO ════ -->
+<!-- ════════════ HERO ════════════ -->
 <section id="hero">
-  <div class="hero-bg"></div>
+  <div class="hero-glow-1"></div>
+  <div class="hero-glow-2"></div>
+  <div class="hero-glow-3"></div>
   <div class="hero-grid"></div>
-
-  <!-- Large LK watermark background -->
-  <div class="hero-lk-bg">
-    <svg width="520" height="420" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <rect x="8" y="14" width="20" height="82" rx="2" fill="#00D4FF"/>
-      <rect x="8" y="80" width="48" height="16" rx="2" fill="#00D4FF"/>
-      <rect x="54" y="14" width="20" height="82" rx="2" fill="#00D4FF"/>
-      <polygon points="54,58 100,14 114,14 68,58 114,96 100,96" fill="#00D4FF"/>
-    </svg>
-  </div>
+  <div class="hero-horizon"></div>
 
   <div class="hero-inner">
-    <div class="hero-eyebrow">
+    <div class="hero-ey">
       <span class="live">Open for Projects</span>
-      <span>·</span><span>Mombasa, Kenya</span><span>·</span><span>Digital Engineering Studio</span>
+      <span>·</span><span>Mombasa, Kenya</span>
+      <span>·</span><span>Digital Engineering Studio</span>
     </div>
 
-    <h1 class="hero-h">
+    <h1 class="hero-h1">
       <span class="line">We don't build</span>
-      <span class="line outline">websites.</span>
-      <span class="line">We engineer <span class="cyan-italic" id="scramble">revenue.</span></span>
+      <span class="gold-stroke">websites.</span>
+      <span class="line">We engineer <span class="scramble-wrap"><span id="scramble">revenue</span><span id="cursor-blink"></span></span><span class="teal-italic">.</span></span>
     </h1>
 
     <p class="hero-sub">
-      <b>Illuminating Growth</b> — Digital Platforms That Turn Visitors Into Revenue.
+      <span class="teal">LuminaKwa Digital</span> — a strategic engineering studio ready to Illuminate growth.
+      We build <b>revenue engines</b>, lead machines, and community platforms for
+      Kenyan businesses ready to operate at full capacity.
     </p>
 
-    <div class="hero-acts">
-      <button class="btn-cyan-lg" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Start Your Project →</button>
-      <a href="#cases" class="btn-outline-lg">View Our Work</a>
+    <div class="hero-ctas">
+      <button class="btn-hero primary" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">
+        Start Your Project →
+      </button>
+      <a href="#cases" class="btn-hero secondary">View Our Work</a>
     </div>
 
     <div class="hero-stats">
-      <div class="hs"><div class="hs-n" data-count="10" data-sfx="+">0</div><div class="hs-l">Projects</div></div>
-      <div class="hs"><div class="hs-n" data-count="98" data-sfx="%">0</div><div class="hs-l">Satisfaction</div></div>
-      <div class="hs"><div class="hs-n" data-count="3" data-sfx="×">0</div><div class="hs-l">Avg. Growth</div></div>
+      <div class="hs"><div class="hs-n" data-count="10" data-sfx="+">0</div><div class="hs-l">Projects Delivered</div></div>
+      <div class="hs"><div class="hs-n" data-count="98" data-sfx="%">0</div><div class="hs-l">Client Satisfaction</div></div>
+      <div class="hs"><div class="hs-n" data-count="3" data-sfx="×">0</div><div class="hs-l">Avg. Revenue Lift</div></div>
       <div class="hs"><div class="hs-n" data-count="72" data-sfx="h">0</div><div class="hs-l">First Delivery</div></div>
     </div>
+  </div>
+
+  <!-- Floating proof -->
+  <div class="hero-proof-card">
+    <div class="hpc-label">Latest Result</div>
+    <div class="hpc-val">+150%</div>
+    <div class="hpc-sub">Online giving — Fountain Gate Church</div>
+    <div class="hpc-divider"></div>
+    <div class="hpc-label">This Month</div>
+    <div class="hpc-val" style="color:var(--gold)">80+</div>
+    <div class="hpc-sub">Weekly e-commerce orders — Greenify</div>
   </div>
 </section>
 
@@ -131,353 +152,428 @@
 <div class="ticker">
   <div class="ticker-t">
     <span class="ti"><span class="dot"></span>Lead Generation</span>
-    <span class="ti"><span class="dot"></span>M-Pesa Integration</span>
+    <span class="ti"><span class="dot gold-dot"></span>M-Pesa Integration</span>
     <span class="ti"><span class="dot"></span>Church Platforms</span>
-    <span class="ti"><span class="dot"></span>E-commerce Systems</span>
+    <span class="ti"><span class="dot gold-dot"></span>E-commerce Systems</span>
     <span class="ti"><span class="dot"></span>Business Automation</span>
-    <span class="ti"><span class="dot"></span>SEO &amp; Growth</span>
+    <span class="ti"><span class="dot gold-dot"></span>SEO &amp; Growth</span>
     <span class="ti"><span class="dot"></span>Client Portals</span>
-    <span class="ti"><span class="dot"></span>Booking Systems</span>
+    <span class="ti"><span class="dot gold-dot"></span>Booking Systems</span>
     <span class="ti"><span class="dot"></span>Lead Generation</span>
-    <span class="ti"><span class="dot"></span>M-Pesa Integration</span>
+    <span class="ti"><span class="dot gold-dot"></span>M-Pesa Integration</span>
     <span class="ti"><span class="dot"></span>Church Platforms</span>
-    <span class="ti"><span class="dot"></span>E-commerce Systems</span>
+    <span class="ti"><span class="dot gold-dot"></span>E-commerce Systems</span>
     <span class="ti"><span class="dot"></span>Business Automation</span>
-    <span class="ti"><span class="dot"></span>SEO &amp; Growth</span>
+    <span class="ti"><span class="dot gold-dot"></span>SEO &amp; Growth</span>
     <span class="ti"><span class="dot"></span>Client Portals</span>
-    <span class="ti"><span class="dot"></span>Booking Systems</span>
+    <span class="ti"><span class="dot gold-dot"></span>Booking Systems</span>
   </div>
 </div>
 
-<!-- ════ ABOUT ════ -->
+<!-- ════════════ ABOUT ════════════ -->
 <section id="about">
   <div class="about-grid">
     <div class="rv">
-      <div class="sec-lbl" style="color:#5A7898">The Studio</div>
-      <h2 class="about-h">We believe digital should drive <em>real economic outcomes</em> in Kenya.</h2>
-      <p class="about-p">LuminaKwa Digital isn't a template shop. We're a <strong>strategic engineering studio</strong> based in Mombasa. Every system we build starts with one question: what revenue outcome are we engineering toward?</p>
-      <p class="about-p">Inspired by the precision and relentless drive of Ayrton Senna — our work is engineered to the last millisecond. Fast. Precise. Built to win.</p>
+      <div class="sec-lbl">The Studio</div>
+      <h2 class="about-h">We engineer <span class="teal">real outcomes</span> for Kenyan businesses ready to <span class="gold">grow</span>.</h2>
+      <p class="about-p">LuminaKwa Digital isn't a template shop. We're a <strong>strategic engineering studio</strong> in Mombasa. Every system we build starts with one question: what revenue outcome are we engineering toward?</p>
+      <p class="about-p">Fast. Precise. Built to win — for Kenyan businesses ready to compete at the highest level online and beyond.</p>
       <div class="about-quote">
         <p>"Illuminating the path forward for Kenyan businesses — one digital system at a time."</p>
         <cite>LuminaKwa Digital — Our founding philosophy</cite>
       </div>
-      <a href="#contact" class="about-btn">Talk to Our Team →</a>
+      <a href="#contact" class="about-cta">Talk to Our Team →</a>
     </div>
     <div class="rv d2">
-      <div class="dash-card">
-        <div class="dash-top">
+      <div class="dash">
+        <div class="dash-bar">
           <div class="dash-dots"><span></span><span></span><span></span></div>
-          <div class="dash-url">luminakwadigital · Client Dashboard · </div>
+          <div class="dash-url">luminakwadigital · Live Dashboard · (Coming Soon)</div>
         </div>
         <div class="dash-body">
-          <div class="dash-stat"><span class="ds-label">Greenify — Weekly Orders</span><span class="ds-val">80+ <span class="ds-tag">↑ 2.1×</span></span></div>
-          <div class="dash-stat"><span class="ds-label">Autosphere — Test Drives</span><span class="ds-val">3× increase <span class="ds-tag">↑ 60%</span></span></div>
-          <div class="dash-stat"><span class="ds-label">Fountain Gate — Members</span><span class="ds-val">500+ <span class="ds-tag">↑ 150%</span></span></div>
-          <div class="dash-stat"><span class="ds-label">Avg. Client ROI — 90 days</span><span class="ds-val" style="color:#27C93F">3× revenue lift</span></div>
-          <div class="dash-cred"><div class="dc-n">72h</div><div class="dc-l">Average first delivery</div></div>
+          <div class="dash-metric"><span class="dm-label">Greenify — Weekly Orders</span><span class="dm-val">80+ <span class="dm-tag">↑ 2.1×</span></span></div>
+          <div class="dash-metric"><span class="dm-label">Autosphere — Test Drives</span><span class="dm-val">3× increase <span class="dm-tag">↑ 60%</span></span></div>
+          <div class="dash-metric"><span class="dm-label">Fountain Gate — Members</span><span class="dm-val">500+ <span class="dm-tag gold">↑ 150%</span></span></div>
+          <div class="dash-metric"><span class="dm-label">Avg. Client ROI — 90 days</span><span class="dm-val" style="color:#27C93F">3× revenue lift</span></div>
+        </div>
+        <div class="dash-footer">
+          <div><div class="df-n">72h</div><div class="df-l">Avg. First Delivery</div></div>
+          <div class="df-badge">⭐ 98% Satisfaction</div>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ════ GROWTH ENGINES ════ -->
+<!-- ════════════ GROWTH ENGINES ════════════ -->
 <section id="engines">
   <div class="srow rv">
     <div>
       <div class="sec-lbl">Strategic Systems</div>
       <h2 class="sec-h">Four engines.<br>One goal: revenue.</h2>
     </div>
-    <p class="sec-sub" style="max-width:340px">We architect the specific digital engine your business needs to grow — then build it, test it, and hand you the keys.</p>
+    <p class="sec-sub" style="max-width:340px">We architect the exact digital engine your business needs — then build it, test it, and hand you the keys.</p>
   </div>
   <div class="engines-g">
-    <div class="eng-card rv">
+    <div class="eng rv">
       <div class="eng-num">Lead Engine</div>
       <div class="eng-ico">🎯</div>
       <div class="eng-name">Turn searches<br>into clients.</div>
       <p class="eng-desc">Built for businesses who need a steady stream of qualified inbound leads — without paid ads or cold calling.</p>
-      <div class="eng-angle"><div class="ea-l">Strategy</div><div class="ea-t">"Your website should be your best-performing salesperson. We engineer it that way — SEO, landing pages, and lead capture that converts while you sleep."</div></div>
-      <div class="eng-tags"><span class="etag">Web Dev</span><span class="etag">SEO</span><span class="etag">Landing Pages</span><span class="etag">CRO</span></div>
+      <div class="eng-angle"><div class="ea-l">Strategy Angle</div><div class="ea-t">"Your website should be your best-performing salesperson. We engineer it that way — SEO foundations, landing pages, and lead capture that converts while you sleep."</div></div>
+      <div class="eng-tags"><span class="etag">Web Dev</span><span class="etag">SEO</span><span class="etag">Landing Pages</span><span class="etag">Lead Capture</span></div>
     </div>
-    <div class="eng-card rv d1">
+    <div class="eng rv d1">
       <div class="eng-num">Revenue Engine</div>
       <div class="eng-ico">💰</div>
       <div class="eng-name">Sell 24/7.<br>Without lifting a finger.</div>
-      <p class="eng-desc">E-commerce systems, M-Pesa integration, and automated booking flows that generate revenue round the clock.</p>
-      <div class="eng-angle"><div class="ea-l">Strategy</div><div class="ea-t">"Not just an online store. A complete revenue system — M-Pesa checkout, inventory automation, and customer loyalty loops built in."</div></div>
-      <div class="eng-tags"><span class="etag">E-commerce</span><span class="etag">M-Pesa</span><span class="etag">Booking</span><span class="etag">Paystack</span></div>
+      <p class="eng-desc">E-commerce systems, M-Pesa integration, and automated booking flows that generate revenue around the clock.</p>
+      <div class="eng-angle"><div class="ea-l">Strategy Angle</div><div class="ea-t">"Not just an online store — a complete revenue system with M-Pesa checkout, inventory automation, and customer loyalty loops built in from day one."</div></div>
+      <div class="eng-tags"><span class="etag">E-commerce</span><span class="etag">M-Pesa</span><span class="etag">Paystack</span><span class="etag">Booking</span></div>
     </div>
-    <div class="eng-card rv d2">
+    <div class="eng rv d2">
       <div class="eng-num">Community Engine</div>
       <div class="eng-ico">⛪</div>
       <div class="eng-name">Turn visitors into<br>loyal members.</div>
-      <p class="eng-desc">For churches, NGOs, and associations that need to grow a digital community — not just a website.</p>
-      <div class="eng-angle"><div class="ea-l">Strategy</div><div class="ea-t">"Not just online giving — a full member lifecycle system. From first visit to tithe, from newcomer to volunteer."</div></div>
+      <p class="eng-desc">For churches, NGOs, and associations that need to grow a digital community — not just maintain a website.</p>
+      <div class="eng-angle"><div class="ea-l">Strategy Angle</div><div class="ea-t">"Not just online giving — a member lifecycle system. From first visit to tithe, from newcomer to volunteer. Built for the long game."</div></div>
       <div class="eng-tags"><span class="etag">Church Platforms</span><span class="etag">Member Portal</span><span class="etag">Events</span><span class="etag">Giving</span></div>
     </div>
-    <div class="eng-card rv d3">
+    <div class="eng rv d3">
       <div class="eng-num">Operations Engine</div>
       <div class="eng-ico">⚙️</div>
       <div class="eng-name">Automate the work.<br>Keep the profit.</div>
-      <p class="eng-desc">Custom dashboards, CRMs, and workflow automation that eliminate manual work permanently.</p>
-      <div class="eng-angle"><div class="ea-l">Strategy</div><div class="ea-t">"Every hour spent on manual admin is profit walking out the door. We engineer the systems that take that work off your plate for good."</div></div>
-      <div class="eng-tags"><span class="etag">Dashboards</span><span class="etag">Automation</span><span class="etag">CRM</span><span class="etag">Supabase</span></div>
+      <p class="eng-desc">Custom dashboards, CRMs, and workflow automation that eliminate manual work and let your team focus on growth.</p>
+      <div class="eng-angle"><div class="ea-l">Strategy Angle</div><div class="ea-t">"Every hour your team spends on manual admin is profit walking out the door. We engineer the systems that take that off your plate permanently."</div></div>
+      <div class="eng-tags"><span class="etag">Dashboards</span><span class="etag">CRM</span><span class="etag">Supabase</span><span class="etag">Automation</span></div>
     </div>
   </div>
 </section>
 
-<!-- ════ CASE FILES ════ -->
+<!-- ════════════ CASE FILES ════════════ -->
 <section id="cases" style="padding:0">
-  <div style="padding:8rem 5% 4rem" class="rv">
-    <div class="sec-lbl">Case Files</div>
+  <div class="cases-header rv">
+    <div class="sec-lbl gold">Case Files</div>
     <h2 class="sec-h">Work that moved<br>real numbers.</h2>
   </div>
   <div class="cases-stack">
     <div class="case-row rv" onclick="openCS('greenify')">
       <div class="case-info">
         <div class="case-num">Case File — 01</div>
-        <div class="case-tags"><span class="case-tag">E-commerce</span><span class="case-tag">·</span><span class="case-tag">M-Pesa</span></div>
+        <div class="case-cats"><span class="case-cat">E-commerce</span><span class="case-cat" style="color:var(--fog2)">·</span><span class="case-cat">M-Pesa</span><span class="case-cat" style="color:var(--fog2)">·</span><span class="case-cat">Automation</span></div>
         <div class="case-name">Greenify<br>Nairobi</div>
-        <p class="case-desc">A plant shop with beautiful products and zero online presence. We engineered a revenue engine that expanded their reach across 8 counties.</p>
-        <div class="case-metrics"><div><div class="cm-n">80+</div><div class="cm-l">Weekly Orders</div></div><div><div class="cm-n">+40%</div><div class="cm-l">Conversion</div></div><div><div class="cm-n">2.1×</div><div class="cm-l">Revenue</div></div></div>
+        <p class="case-desc">A plant shop with beautiful products and zero online presence. We engineered a revenue engine that expanded their reach across 8 counties in 6 weeks.</p>
+        <div class="case-metrics">
+          <div><div class="case-m-n">80+</div><div class="case-m-l">Weekly Orders</div></div>
+          <div><div class="case-m-n">+40%</div><div class="case-m-l">Conversion</div></div>
+          <div><div class="case-m-n">2.1×</div><div class="case-m-l">Revenue Lift</div></div>
+        </div>
         <div class="case-link">View Case File →</div>
       </div>
-      <div class="case-img"><img src="project images/greenify.png" alt="Greenify"/><div class="case-ov"></div></div>
+      <div class="case-img">
+        <img src="project images/greenify.png" alt="Greenify E-commerce"/>
+        <div class="case-ov"></div>
+        <div class="case-img-badge">Revenue Engine</div>
+      </div>
     </div>
     <div class="case-row rv" onclick="openCS('autosphere')">
       <div class="case-info">
         <div class="case-num">Case File — 02</div>
-        <div class="case-tags"><span class="case-tag">Web App</span><span class="case-tag">·</span><span class="case-tag">Booking</span></div>
+        <div class="case-cats"><span class="case-cat">Web App</span><span class="case-cat" style="color:var(--fog2)">·</span><span class="case-cat">Booking</span><span class="case-cat" style="color:var(--fog2)">·</span><span class="case-cat">AR Experience</span></div>
         <div class="case-name">Autosphere<br>Kenya</div>
-        <p class="case-desc">A dealership losing ground to competitors. We built an AR showroom and booking system that made the digital experience their biggest advantage.</p>
-        <div class="case-metrics"><div><div class="cm-n">3×</div><div class="cm-l">Test Drives</div></div><div><div class="cm-n">60%</div><div class="cm-l">Faster Close</div></div></div>
+        <p class="case-desc">A dealership losing ground to competitors. We built an AR virtual showroom and booking system that made the digital experience their biggest advantage.</p>
+        <div class="case-metrics">
+          <div><div class="case-m-n">3×</div><div class="case-m-l">Test Drives</div></div>
+          <div><div class="case-m-n">60%</div><div class="case-m-l">Faster Close</div></div>
+          <div><div class="case-m-n">45+</div><div class="case-m-l">Monthly Leads</div></div>
+        </div>
         <div class="case-link">View Case File →</div>
       </div>
-      <div class="case-img"><img src="project images/autosphere.png" alt="Autosphere"/><div class="case-ov"></div></div>
+      <div class="case-img">
+        <img src="project images/autosphere.png" alt="Autosphere AR Showroom"/>
+        <div class="case-ov"></div>
+        <div class="case-img-badge">Operations Engine</div>
+      </div>
     </div>
     <div class="case-row rv" onclick="openCS('fountain')">
       <div class="case-info">
         <div class="case-num">Case File — 03</div>
-        <div class="case-tags"><span class="case-tag">Community Engine</span><span class="case-tag">·</span><span class="case-tag">Giving</span></div>
+        <div class="case-cats"><span class="case-cat">Community Engine</span><span class="case-cat" style="color:var(--fog2)">·</span><span class="case-cat">Online Giving</span></div>
         <div class="case-name">Fountain Gate<br>Church</div>
-        <p class="case-desc">A fast-growing church with no digital infrastructure. We built a community platform that turned Sunday visits into a 7-day digital relationship.</p>
-        <div class="case-metrics"><div><div class="cm-n">500+</div><div class="cm-l">Members</div></div><div><div class="cm-n">+150%</div><div class="cm-l">Online Giving</div></div></div>
+        <p class="case-desc">A fast-growing church with no digital infrastructure. We built a platform that turned Sunday visits into a 7-day digital relationship.</p>
+        <div class="case-metrics">
+          <div><div class="case-m-n">500+</div><div class="case-m-l">Active Members</div></div>
+          <div><div class="case-m-n">+150%</div><div class="case-m-l">Online Giving</div></div>
+          <div><div class="case-m-n">2K+</div><div class="case-m-l">Monthly Streams</div></div>
+        </div>
         <div class="case-link">View Case File →</div>
       </div>
-      <div class="case-img"><img src="project images/fountain gate church.png" alt="Fountain Gate"/><div class="case-ov"></div></div>
+      <div class="case-img">
+        <img src="project images/fountain gate church.png" alt="Fountain Gate Church"/>
+        <div class="case-ov"></div>
+        <div class="case-img-badge">Community Engine</div>
+      </div>
     </div>
   </div>
 </section>
 
-<!-- ════ PROCESS ════ -->
+<!-- ════════════ PROCESS ════════════ -->
 <section id="process">
   <div class="rv">
     <div class="sec-lbl">Our Process</div>
-    <h2 class="sec-h" style="color:#0A1525">From brief to full throttle<br>in 4 precise steps.</h2>
-    <p class="sec-sub">Every project follows the same precision process. No surprises. No disappearing acts.</p>
+    <h2 class="sec-h">From brief to full throttle<br>in 4 precise steps.</h2>
+    <p class="sec-sub">Every project follows the same precision process. No surprises. No disappearing acts. Just results.</p>
   </div>
-  <div class="proc-g">
-    <div class="proc-step rv"><div class="proc-ico">🔬</div><div class="proc-num">Step 01 · Strategy</div><div class="proc-t">30-Min Growth Audit</div><p class="proc-d">We diagnose your digital blind spots and map the exact growth engine your business needs. Free. No pitch.</p><div class="proc-big">01</div></div>
-    <div class="proc-step rv d1"><div class="proc-ico">📐</div><div class="proc-num">Step 02 · Design</div><div class="proc-t">Prototype Before Code</div><p class="proc-d">Full Figma prototype delivered before a line of code is written. Every screen, every flow — your approval required.</p><div class="proc-big">02</div></div>
-    <div class="proc-step rv d2"><div class="proc-ico">⚡</div><div class="proc-num">Step 03 · Build</div><div class="proc-t">Engineer &amp; Test</div><p class="proc-d">Clean code, cross-device testing, Lighthouse 95+, SEO-ready from day one.</p><div class="proc-big">03</div></div>
-    <div class="proc-step rv d3"><div class="proc-ico">🏁</div><div class="proc-num">Step 04 · Launch</div><div class="proc-t">Deploy &amp; Scale</div><p class="proc-d">Live launch with full handover, team training, and 30-day post-launch monitoring. Then the real race begins.</p><div class="proc-big">04</div></div>
+  <div class="proc-grid">
+    <div class="proc-step rv"><div class="proc-ico">🔬</div><div class="proc-n">Step 01 · Strategy</div><div class="proc-t">Free 30-Min Growth Audit</div><p class="proc-d">We diagnose your digital blind spots and map the exact growth engine your business needs. Free. No sales pitch.</p><div class="proc-big">01</div></div>
+    <div class="proc-step rv d1"><div class="proc-ico">📐</div><div class="proc-n">Step 02 · Design</div><div class="proc-t">Prototype Before Code</div><p class="proc-d">Full Figma prototype delivered before a single line of code is written. Your approval required at every stage.</p><div class="proc-big">02</div></div>
+    <div class="proc-step rv d2"><div class="proc-ico">⚡</div><div class="proc-n">Step 03 · Build</div><div class="proc-t">Engineer &amp; Test</div><p class="proc-d">Clean code, cross-device tested, Lighthouse 95+, SEO-ready from day one. Built for speed and precision.</p><div class="proc-big">03</div></div>
+    <div class="proc-step rv d3"><div class="proc-ico">🏁</div><div class="proc-n">Step 04 · Launch</div><div class="proc-t">Deploy &amp; Scale</div><p class="proc-d">Live launch with full handover, team training, and 30-day post-launch monitoring. Then the real growth begins.</p><div class="proc-big">04</div></div>
   </div>
 </section>
 
-<!-- ════ AI TOOLS ════ -->
+<!-- ════════════ AI TOOLS ════════════ -->
 <section id="aitools">
   <div class="srow rv">
     <div>
       <div class="sec-lbl">Free AI Tools</div>
       <h2 class="sec-h">Powered by Claude AI.<br>Free for Kenyan businesses.</h2>
     </div>
-    <p class="sec-sub" style="max-width:300px">The same AI intelligence powering our dev workflow. Try it free.</p>
+    <p class="sec-sub" style="max-width:300px">The same AI intelligence powering our dev workflow. Professional-grade results, free.</p>
   </div>
-  <div class="ai-banner rv">
-    <p>🤖 Powered by <b>Claude AI</b> (Anthropic) — professional-grade, Kenya-market specific results.</p>
-    <button class="btn-cyan" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})" style="flex-shrink:0">Get a Full Strategy Session →</button>
+  <div class="ai-promo rv">
+    <p>🤖 Powered by <b>Claude AI</b> (Anthropic) — professional-grade, Kenya-market specific insights in seconds.</p>
+    <button class="btn-teal" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})" style="flex-shrink:0;font-size:.82rem;padding:.56rem 1.25rem">Get Full Strategy Session →</button>
   </div>
-  <div class="ai-g">
+  <div class="ai-grid">
     <div class="ai-card rv">
-      <div class="ai-head"><div class="ah-ico">🔍</div><h3>AI Website Auditor</h3><p>Get a professional conversion score and actionable fixes — in seconds.</p></div>
+      <div class="ai-head"><div class="ai-ico">🔍</div><h3>AI Website Auditor</h3><p>Get a professional conversion score and actionable improvement plan — in seconds.</p></div>
       <div class="ai-body">
         <div class="aif"><label>Website URL or Description</label><input type="text" id="a_url" placeholder="www.yourbusiness.co.ke"/></div>
         <div class="aif"><label>Business Type</label>
-          <select id="a_type"><option value="">— Select industry —</option><option>E-commerce</option><option>Church / Religious</option><option>Restaurant</option><option>Professional Services</option><option>Real Estate</option><option>Healthcare</option><option>Education</option><option>NGO</option><option>Automotive</option><option>Other</option></select>
+          <select id="a_type"><option value="">— Select industry —</option><option>E-commerce / Retail</option><option>Church / Religious</option><option>Restaurant / Hospitality</option><option>Professional Services</option><option>Real Estate</option><option>Healthcare / Clinic</option><option>Education / Training</option><option>NGO / Nonprofit</option><option>Automotive</option><option>Other</option></select>
         </div>
-        <div class="aif"><label>Primary Goal</label><input type="text" id="a_goal" placeholder="e.g. get more clients, sell online"/></div>
-        <button class="ai-run" id="a_btn" onclick="runAudit()">🔍 Run Free Audit</button>
-        <div class="ai-loader" id="a_load"><div class="ai-dots"><span></span><span></span><span></span></div><p>Analyzing your site…</p></div>
+        <div class="aif"><label>Primary Goal</label><input type="text" id="a_goal" placeholder="e.g. get more clients, sell products online"/></div>
+        <button class="ai-run" id="a_btn" onclick="runAudit()">🔍 Run Free AI Audit</button>
+        <div class="ai-loader" id="a_load"><div class="ld"><span></span><span></span><span></span></div><div class="ld-t">Analyzing your site…</div></div>
         <div class="ai-err" id="a_err"></div>
-        <div class="ai-result" id="a_res"><div class="ai-result-box"><pre id="a_out"></pre></div></div>
+        <div class="ai-res" id="a_res"><div class="ai-res-box"><pre id="a_out"></pre></div></div>
       </div>
     </div>
     <div class="ai-card rv d1">
-      <div class="ai-head"><div class="ah-ico">✍️</div><h3>AI Headline Generator</h3><p>Generate 5 conversion-focused headlines crafted for your exact business.</p></div>
+      <div class="ai-head"><div class="ai-ico">✍️</div><h3>AI Headline Generator</h3><p>Generate 5 conversion-focused website headlines crafted for your exact business.</p></div>
       <div class="ai-body">
         <div class="aif"><label>Your Business</label><input type="text" id="h_biz" placeholder="e.g. Mombasa wedding photographer"/></div>
         <div class="aif"><label>Target Customer</label><input type="text" id="h_cust" placeholder="e.g. couples planning beach weddings"/></div>
         <div class="aif"><label>Your Unique Edge</label><input type="text" id="h_usp" placeholder="e.g. fast delivery, 5-star rated"/></div>
         <button class="ai-run" id="h_btn" onclick="runHeadlines()">✍️ Generate Headlines</button>
-        <div class="ai-loader" id="h_load"><div class="ai-dots"><span></span><span></span><span></span></div><p>Crafting your headlines…</p></div>
+        <div class="ai-loader" id="h_load"><div class="ld"><span></span><span></span><span></span></div><div class="ld-t">Crafting your headlines…</div></div>
         <div class="ai-err" id="h_err"></div>
-        <div class="ai-result" id="h_res"><div class="ai-result-box"><pre id="h_out"></pre></div></div>
+        <div class="ai-res" id="h_res"><div class="ai-res-box"><pre id="h_out"></pre></div></div>
       </div>
     </div>
     <div class="ai-card rv d2">
-      <div class="ai-head"><div class="ah-ico">📊</div><h3>AI SEO Keyword Advisor</h3><p>Find the exact keywords your Kenyan customers search — and how to rank.</p></div>
+      <div class="ai-head"><div class="ai-ico">📊</div><h3>AI SEO Keyword Advisor</h3><p>Discover the exact keywords Kenyan customers search — and how to rank for them fast.</p></div>
       <div class="ai-body">
-        <div class="aif"><label>Your Business Niche</label><input type="text" id="s_niche" placeholder="e.g. plumbing, maternity clothes"/></div>
+        <div class="aif"><label>Your Business Niche</label><input type="text" id="s_niche" placeholder="e.g. plumbing services, maternity clothes"/></div>
         <div class="aif"><label>Your City</label><input type="text" id="s_loc" placeholder="e.g. Mombasa, Nairobi, Kisumu"/></div>
         <div class="aif"><label>Ideal Customer</label><input type="text" id="s_cust" placeholder="e.g. homeowners, pregnant women"/></div>
         <button class="ai-run" id="s_btn" onclick="runSEO()">📊 Get My Keywords</button>
-        <div class="ai-loader" id="s_load"><div class="ai-dots"><span></span><span></span><span></span></div><p>Finding your keywords…</p></div>
+        <div class="ai-loader" id="s_load"><div class="ld"><span></span><span></span><span></span></div><div class="ld-t">Finding your keywords…</div></div>
         <div class="ai-err" id="s_err"></div>
-        <div class="ai-result" id="s_res"><div class="ai-result-box"><pre id="s_out"></pre></div></div>
+        <div class="ai-res" id="s_res"><div class="ai-res-box"><pre id="s_out"></pre></div></div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ════ PRICING ════ -->
+<!-- ════════════ PRICING ════════════ -->
 <section id="pricing">
   <div class="srow rv">
     <div><div class="sec-lbl">Investment</div><h2 class="sec-h">Transparent pricing.<br>Real ROI targets.</h2></div>
-    <p class="sec-sub" style="max-width:300px">Every package includes a strategy session. We don't start building until we know your revenue goal.</p>
+    <p class="sec-sub" style="max-width:300px">Every package starts with a strategy session. We don't build until we know your revenue goal.</p>
   </div>
-  <div class="price-g">
+  <div class="price-grid">
     <div class="pc rv">
       <div class="p-tier">Starter Engine</div>
-      <div class="p-amount"><sup>KES </sup>15K</div>
+      <div class="p-amt"><sup>KES </sup>15K</div>
       <div class="p-cycle">One-time · Delivered in 5–7 days</div>
       <div class="p-roi">📈 Target: +KES 30–60K/month in new leads</div>
-      <ul class="p-feats"><li>5-page professional website</li><li>Mobile-first responsive design</li><li>Lead capture + WhatsApp integration</li><li>Google Analytics + basic SEO</li><li>1 revision round</li><li class="no">M-Pesa payment system</li><li class="no">Custom web application</li></ul>
-      <button class="p-btn ot" onclick="preF('Starter Engine — KES 15,000')">Get Started</button>
+      <ul class="p-feats">
+        <li>5-page professional website</li>
+        <li>Mobile-first responsive design</li>
+        <li>Lead capture + WhatsApp integration</li>
+        <li>Google Analytics + basic SEO</li>
+        <li>Contact form + 1 revision</li>
+        <li class="no">M-Pesa payment system</li>
+        <li class="no">Custom web application</li>
+      </ul>
+      <button class="p-btn ghost" onclick="preF('Starter Engine — KES 15,000')">Get Started</button>
     </div>
     <div class="pc hot rv d1">
       <div class="p-badge">Most Popular</div>
       <div class="p-tier">Growth Engine</div>
-      <div class="p-amount"><sup>KES </sup>45K</div>
+      <div class="p-amt"><sup>KES </sup>45K</div>
       <div class="p-cycle">One-time · Delivered in 10–14 days</div>
       <div class="p-roi">📈 Target: +KES 100–300K/month lift</div>
-      <ul class="p-feats"><li>Up to 15-page custom website</li><li>Full UI/UX design from scratch</li><li>E-commerce + M-Pesa</li><li>Blog / CMS + advanced SEO</li><li>Lead automation + WhatsApp</li><li>Analytics dashboard</li><li>3 revision rounds</li></ul>
+      <ul class="p-feats">
+        <li>Up to 15-page custom website</li>
+        <li>Full UI/UX design from scratch</li>
+        <li>E-commerce + M-Pesa integration</li>
+        <li>Blog / CMS + advanced SEO</li>
+        <li>Lead automation + WhatsApp</li>
+        <li>Analytics dashboard setup</li>
+        <li>3 revision rounds</li>
+      </ul>
       <button class="p-btn solid" onclick="preF('Growth Engine — KES 45,000')">Start Growing →</button>
     </div>
     <div class="pc rv d2">
+      <div class="p-badge gold">Enterprise</div>
       <div class="p-tier">Full Platform</div>
-      <div class="p-amount"><sup>KES </sup>120K</div>
-      <div class="p-cycle">One-time + optional retainer</div>
+      <div class="p-amt"><sup>KES </sup>120K</div>
+      <div class="p-cycle">One-time + optional monthly retainer</div>
       <div class="p-roi">📈 Target: +KES 300K–1M+ business value</div>
-      <ul class="p-feats"><li>Full custom web application</li><li>User auth + client dashboards</li><li>Supabase database + backend</li><li>M-Pesa + Paystack integration</li><li>Booking + scheduling system</li><li>Admin panel + AI features</li><li>6 months priority support</li></ul>
-      <button class="p-btn ot" onclick="preF('Full Platform — KES 120,000')">Build Your Platform</button>
+      <ul class="p-feats">
+        <li>Full custom web application</li>
+        <li>User auth + client dashboards</li>
+        <li>Supabase database + backend</li>
+        <li>M-Pesa + Paystack deep integration</li>
+        <li>Booking + scheduling system</li>
+        <li>Admin panel + AI features</li>
+        <li>6 months priority support</li>
+      </ul>
+      <button class="p-btn gold" onclick="preF('Full Platform — KES 120,000')">Build Your Platform</button>
     </div>
   </div>
-  <div class="dep rv">
-    <div><div class="dep-t">Start with a small deposit. Finish on delivery.</div><p class="dep-s">Begin any project today with just <b>KES 2,000–5,000 deposit</b>. Balance due on delivery.</p></div>
+  <div class="dep-box rv">
+    <div>
+      <div class="dep-t">🔥 Start today with a small deposit.</div>
+      <p class="dep-s">Begin any project with just <b>KES 2,000–5,000 deposit</b>. Balance paid on delivery. Zero risk.</p>
+    </div>
     <div style="display:flex;gap:.75rem;flex-wrap:wrap">
-      <button class="btn-cyan-lg" style="padding:.8rem 1.5rem;font-size:.875rem" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Book Strategy Call</button>
-      <a href="https://wa.me/254795451238?text=Hi!%20I'd%20like%20to%20start%20with%20a%20deposit." class="btn-outline-lg" style="padding:.8rem 1.5rem;font-size:.875rem" target="_blank">WhatsApp Deposit</a>
+      <button class="btn-hero primary" style="font-size:.875rem;padding:.8rem 1.6rem" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Book Strategy Call</button>
+      <a href="https://wa.me/254795451238?text=Hi%20LuminaKwa%20Digital!%20I%27d%20like%20to%20start%20with%20a%20deposit." class="btn-hero secondary" style="font-size:.875rem;padding:.8rem 1.6rem" target="_blank">WhatsApp Deposit →</a>
     </div>
   </div>
 </section>
 
-<!-- ════ PROOF ════ -->
+<!-- ════════════ PROOF ════════════ -->
 <section id="proof">
-  <div class="sh rv"><div class="sec-lbl">Client Results</div><h2 class="sec-h">Real clients.<br>Real numbers.</h2></div>
-  <div class="proof-g">
-    <div class="proof-c rv"><div class="proof-st">★★★★★</div><p class="proof-q">LuminaKwa didn't just build us a website — they built us a sales machine. We went from zero online sales to 80+ orders a week. The M-Pesa checkout just works, flawlessly.</p><div class="proof-au"><div class="proof-av">JN</div><div><div class="proof-nm">Jane Njoroge</div><div class="proof-rl">Founder · Greenify Nairobi</div></div></div></div>
-    <div class="proof-c rv d1"><div class="proof-st">★★★★★</div><p class="proof-q">The booking system and virtual showroom became our biggest competitive advantage. Incredible delivery in under 3 weeks. Clients can explore cars from home and book instantly.</p><div class="proof-au"><div class="proof-av">DM</div><div><div class="proof-nm">David Mwangi</div><div class="proof-rl">CEO · Autosphere Kenya</div></div></div></div>
-    <div class="proof-c rv d2"><div class="proof-st">★★★★★</div><p class="proof-q">Our congregation grew from 200 to 500+ active members. Online giving increased 150%, funding two new outreach programs. Genuinely life-changing for our ministry.</p><div class="proof-au"><div class="proof-av">PO</div><div><div class="proof-nm">Pastor Peter Otieno</div><div class="proof-rl">Lead Pastor · Fountain Gate Church</div></div></div></div>
+  <div class="sh rv">
+    <div class="sec-lbl gold">Client Results</div>
+    <h2 class="sec-h">Real clients.<br>Real numbers.</h2>
+  </div>
+  <div class="proof-grid">
+    <div class="proof-c rv">
+      <div class="proof-stars">★★★★★</div>
+      <p class="proof-q">LuminaKwa didn't just build us a website — they built us a sales machine. We went from zero online sales to 80+ orders weekly. The M-Pesa checkout just works, flawlessly.</p>
+      <div class="proof-au"><div class="proof-av">JN</div><div><div class="proof-nm">Jane Njoroge</div><div class="proof-rl">Founder · Greenify Nairobi</div></div></div>
+    </div>
+    <div class="proof-c rv d1">
+      <div class="proof-stars">★★★★★</div>
+      <p class="proof-q">The AR showroom and booking system became our biggest competitive advantage. Clients explore cars from home and book test drives instantly. Incredible work in under 3 weeks.</p>
+      <div class="proof-au"><div class="proof-av">DM</div><div><div class="proof-nm">David Mwangi</div><div class="proof-rl">CEO · Autosphere Kenya</div></div></div>
+    </div>
+    <div class="proof-c rv d2">
+      <div class="proof-stars">★★★★★</div>
+      <p class="proof-q">Our congregation grew from 200 to 500+ active members after launch. Online giving increased 150%, funding two new outreach programs. Genuinely life-changing for our ministry.</p>
+      <div class="proof-au"><div class="proof-av">PO</div><div><div class="proof-nm">Pastor Morris</div><div class="proof-rl">Lead Pastor · Fountain Gate Church</div></div></div>
+    </div>
   </div>
 </section>
 
-<!-- ════ CONTACT ════ -->
-<section id="contact" style="background:#EEF2F8;color:#0A1525">
-  <div class="contact-g">
+<!-- ════════════ CONTACT ════════════ -->
+<section id="contact">
+  <div class="contact-grid">
     <div class="rv">
-      <div class="sec-lbl" style="color:#5A7898">Start Here</div>
-      <h2 class="contact-h">Ready to engineer<br><em>your</em> growth system?</h2>
-      <p class="contact-p">Tell us your revenue goal. We'll tell you exactly what to build and how long it'll take. Free. No obligation.</p>
+      <div class="sec-lbl">Start Here</div>
+      <h2 class="contact-h">Ready to engineer<br><em>your</em> growth<br><span class="teal">system?</span></h2>
+      <p class="contact-p">Tell us your revenue goal. We'll tell you exactly what to build and how long it takes. Free. No obligation. No pitch decks.</p>
       <div class="cd-items">
-        <div class="cd-item"><div class="cd-ico">📱</div><div><div class="cd-label">WhatsApp</div><div class="cd-val">+254 795 451 238</div></div></div>
-        <div class="cd-item"><div class="cd-ico">📧</div><div><div class="cd-label">Email</div><div class="cd-val">ayrtonadie@gmail.com</div></div></div>
-        <div class="cd-item"><div class="cd-ico">📍</div><div><div class="cd-label">Studio</div><div class="cd-val">Mombasa, Kenya</div></div></div>
+        <div class="cd-item"><div class="cd-ico">📱</div><div><div class="cd-label">WhatsApp / Call</div><div class="cd-val">+254 795 451 238</div></div></div>
+        <div class="cd-item"><div class="cd-ico">📧</div><div><div class="cd-label">Email</div><div class="cd-val">hello@luminakwadigital.co.ke</div></div></div>
+        <div class="cd-item"><div class="cd-ico">📍</div><div><div class="cd-label">Studio</div><div class="cd-val">Beach Road, Mombasa, Kenya</div></div></div>
       </div>
-      <div class="contact-resp">Typical reply within 2 hours on business days</div>
+      <div class="contact-live">Typical reply within 2 hours on business days</div>
     </div>
     <div class="rv d2">
-      <div class="cf" id="cf-form">
-        <div class="cf-ttl">Brief Us On Your Project</div>
-        <div class="cf-sub">2 minutes · Personalised proposal in 2 hours</div>
+      <div class="form-card" id="fc">
+        <div class="fc-t">Brief Us On Your Project</div>
+        <div class="fc-s">3 min · Personalised proposal in 2 hours · No obligation</div>
         <div class="fg-row">
           <div class="fg"><label class="fgl">Name *</label><input type="text" id="f_nm" placeholder="John Kamau"/></div>
           <div class="fg"><label class="fgl">WhatsApp *</label><input type="tel" id="f_ph" placeholder="+254 7xx xxx xxx"/></div>
         </div>
         <div class="fg"><label class="fgl">Email</label><input type="email" id="f_em" placeholder="john@gmail.com"/></div>
-        <div class="fg"><label class="fgl">Which engine do you need?</label>
-          <div class="pl-row">
-            <button class="pl" onclick="psel(this,'eng')">Lead Engine</button>
-            <button class="pl" onclick="psel(this,'eng')">Revenue Engine</button>
-            <button class="pl" onclick="psel(this,'eng')">Community Engine</button>
-            <button class="pl" onclick="psel(this,'eng')">Operations Engine</button>
-            <button class="pl" onclick="psel(this,'eng')">Not sure yet</button>
+        <div class="fg"><label class="fgl">Which system do you need?</label>
+          <div class="pg">
+            <button class="pp" onclick="psel(this,'eng')">Lead Engine</button>
+            <button class="pp" onclick="psel(this,'eng')">Revenue Engine</button>
+            <button class="pp" onclick="psel(this,'eng')">Community Engine</button>
+            <button class="pp" onclick="psel(this,'eng')">Operations Engine</button>
+            <button class="pp" onclick="psel(this,'eng')">Not sure yet</button>
           </div>
         </div>
         <div class="fg"><label class="fgl">Budget Range (KES)</label>
-          <select id="f_bd"><option value="">— Select —</option><option>Under 20,000</option><option>20,000–50,000</option><option>50,000–100,000</option><option>100,000–300,000</option><option>300,000+</option></select>
+          <select id="f_bd"><option value="">— Select —</option><option>Under 20,000</option><option>20,000 – 50,000</option><option>50,000 – 100,000</option><option>100,000 – 300,000</option><option>300,000+</option></select>
         </div>
-        <div class="fg"><label class="fgl">Tell us your revenue goal</label><textarea id="f_ds" placeholder="What does your business do? What should the platform achieve? What does success look like in 90 days?"></textarea></div>
-        <button class="fsub" onclick="doSubmit()">Send Project Brief — Proposal in 2 Hours →</button>
-        <div class="fn">🔒 Private. Never shared.</div>
+        <div class="fg"><label class="fgl">Your Revenue Goal</label><textarea id="f_ds" placeholder="What does your business do? What should the platform achieve? What does success look like in 90 days?"></textarea></div>
+        <button class="f-submit" onclick="doSubmit()">Send Project Brief — Proposal in 2 Hours →</button>
+        <div class="f-note">🔒 Private · Never shared · Never sold</div>
       </div>
-      <div class="f-suc" id="cf-suc">
+      <div class="f-suc" id="fs">
         <div class="f-suc-ico">🚀</div>
-        <div class="f-suc-t">Brief received.</div>
-        <p class="f-suc-s">Our team is reviewing your project now. Expect a personalised proposal in your WhatsApp within 2 hours.</p>
-        <a href="https://wa.me/254795451238" class="btn-cyan-lg" target="_blank" style="display:inline-flex;justify-content:center">Continue on WhatsApp →</a>
+        <div class="f-suc-t">Brief Received.</div>
+        <p class="f-suc-s">Our team is reviewing your project right now. Expect a personalised proposal in your WhatsApp or email within 2 hours.</p>
+        <a href="https://wa.me/254795451238" class="btn-hero primary" target="_blank" style="display:inline-flex;justify-content:center;margin-top:1rem">Continue on WhatsApp →</a>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ════ FOOTER ════ -->
+<!-- ════════════ FOOTER ════════════ -->
 <footer>
   <div class="ft-g">
     <div>
       <div class="ft-brand">
-        <svg width="32" height="32" viewBox="0 0 42 42" fill="none"><defs><linearGradient id="ftg" x1="0" y1="0" x2="42" y2="42" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#0A2647"/><stop offset="100%" stop-color="#0D3060"/></linearGradient><radialGradient id="ftGlow" cx="45%" cy="55%" r="35%"><stop offset="0%" stop-color="#00D4FF" stop-opacity=".9"/><stop offset="100%" stop-color="#00AADD" stop-opacity="0"/></radialGradient><filter id="ftBlur"><feGaussianBlur stdDeviation="2"/></filter></defs><rect x="4" y="6" width="9" height="30" rx="1" fill="url(#ftg)"/><rect x="4" y="30" width="18" height="6" rx="1" fill="url(#ftg)"/><rect x="20" y="6" width="9" height="30" rx="1" fill="url(#ftg)"/><polygon points="20,21 36,6 42,6 26,21 42,36 36,36" fill="url(#ftg)"/><ellipse cx="19" cy="22" rx="7" ry="7" fill="url(#ftGlow)" filter="url(#ftBlur)"/><ellipse cx="19" cy="22" rx="3" ry="3" fill="#00D4FF" opacity=".85"/></svg>
-        <span><span class="luma">Lumina</span><span class="kwa">Kwa</span> Digital</span>
+        <svg width="32" height="32" viewBox="0 0 40 40" fill="none"><defs><linearGradient id="flg" x1="0" y1="0" x2="40" y2="40" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#0A3060"/><stop offset="100%" stop-color="#0D4080"/></linearGradient><radialGradient id="flg2" cx="46%" cy="54%" r="38%"><stop offset="0%" stop-color="#00E5C0"/><stop offset="100%" stop-color="#00E5C0" stop-opacity="0"/></radialGradient><filter id="ff"><feGaussianBlur stdDeviation="1.5"/></filter></defs><rect x="3" y="5" width="8" height="28" rx="1.2" fill="url(#flg)"/><rect x="3" y="29" width="17" height="6" rx="1.2" fill="url(#flg)"/><rect x="18" y="5" width="8" height="28" rx="1.2" fill="url(#flg)"/><polygon points="18,20 33,5 39,5 24,20 39,35 33,35" fill="url(#flg)"/><ellipse cx="17.5" cy="20.5" rx="8" ry="8" fill="url(#flg2)" filter="url(#ff)"/><ellipse cx="17.5" cy="20.5" rx="2.5" ry="2.5" fill="#00E5C0"/></svg>
+        <div><div class="ft-bn"><span class="lu">Lumina</span><span class="kwa">Kwa</span> Digital</div><div class="ft-sub">Digital Engineering Studio</div></div>
       </div>
-      <p class="ft-desc">Digital engineering studio based in Mombasa. We build revenue systems for Kenyan businesses ready to operate at full capacity.</p>
+      <p class="ft-desc">Strategic digital engineering studio in Mombasa. We build revenue systems for Kenyan businesses ready to operate at full capacity.</p>
     </div>
     <div class="ft-c"><h4>Systems</h4><ul><li><a href="#engines">Lead Engine</a></li><li><a href="#engines">Revenue Engine</a></li><li><a href="#engines">Community Engine</a></li><li><a href="#engines">Operations Engine</a></li></ul></div>
     <div class="ft-c"><h4>Studio</h4><ul><li><a href="#cases">Case Files</a></li><li><a href="#aitools">Free AI Tools</a></li><li><a href="#process">Our Process</a></li><li><a href="#pricing">Pricing</a></li></ul></div>
-    <div class="ft-c"><h4>Contact</h4><ul><li><a href="https://wa.me/254795451238">+254 795 451 238</a></li><li><a href="mailto:ayrtonadie@gmail.com">ayrtonadie@gmail.com</a></li><li><a>Mombasa 🇰🇪</a></li><li><a href="#contact">Start a Project →</a></li></ul></div>
+    <div class="ft-c"><h4>Contact</h4><ul><li><a href="https://wa.me/254795451238">+254 795 451 238</a></li><li><a href="mailto:hello@luminakwadigital.co.ke">hello@luminakwadigital.co.ke</a></li><li><a>Beach Road, Mombasa 🇰🇪</a></li><li><a href="#contact">Start a Project →</a></li></ul></div>
   </div>
   <div class="ft-bot">
-    <span>© 2025 <b>LuminaKwa Digital</b>. All rights reserved. Built in Mombasa.</span>
-    <span>Engineered to <b>convert</b></span>
+    <span>© 2026 <span class="teal">LuminaKwa Digital</span>. All rights reserved. Built to Illuminate growth.</span>
+    <span>Engineered to <span class="gold">convert</span></span>
   </div>
 </footer>
 
-<!-- CASE STUDY MODAL -->
+<!-- CASE MODAL -->
 <div class="cs-ov" id="csOv">
   <div class="cs-box">
-    <div class="cs-head"><span id="cs-ttl"></span><button class="cs-close" onclick="closeCS()">✕</button></div>
-    <div class="cs-body" id="cs-body"></div>
+    <div class="cs-head"><h3 id="cs-t"></h3><button class="cs-close" onclick="closeCS()">✕</button></div>
+    <div class="cs-body" id="cs-b"></div>
   </div>
 </div>
 
-<!-- FLOATING -->
-<a href="https://wa.me/254795451238?text=Hi%20LuminaKwa%20Digital!" class="wa-fl" target="_blank" rel="noopener"><div class="wa-ring"></div><svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg></a>
+<!-- FLOATING BUTTONS -->
+<a href="https://wa.me/254795451238?text=Hi%20LuminaKwa%20Digital!" class="wa-fl" target="_blank" rel="noopener">
+  <div class="wa-ring"></div>
+  <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+</a>
+
 <div class="stk" id="stk">
-  <div class="stk-t"><b>LuminaKwa Digital</b> — ready to engineer your growth.</div>
+  <div class="stk-t"><b>LuminaKwa Digital</b> — ready to engineer your growth system.</div>
   <div class="stk-a">
-    <a href="https://wa.me/254795451238" class="btn-ghost" style="font-size:.8rem;padding:.52rem 1.1rem" target="_blank">WhatsApp</a>
-    <button class="btn-cyan" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Start Project →</button>
+    <a href="https://wa.me/254795451238" class="btn-stk glass" target="_blank">WhatsApp</a>
+    <button class="btn-stk teal" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Start Project →</button>
   </div>
 </div>
 
+<!-- ════════════ JAVASCRIPT ════════════ -->
 <script src="script.js"></script>
 </body>
 </html>
