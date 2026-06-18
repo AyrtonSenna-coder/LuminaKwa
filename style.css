@@ -608,6 +608,15 @@ footer{background:var(--deep);border-top:1px solid rgba(0,229,192,.1);padding:4.
 .ft-bn{font-size:1.1rem;font-weight:700;letter-spacing:-.01em}
 .ft-sub{font-family:var(--mn);font-size:.58rem;letter-spacing:.18em;text-transform:uppercase;color:var(--fog2)}
 .ft-desc{font-size:.85rem;color:var(--fog);line-height:1.78;max-width:260px;margin-bottom:1.5rem}
+.ft-social{display:flex;gap:.6rem}
+.ft-soc-btn{
+  width:38px;height:38px;border-radius:9px;
+  background:rgba(0,229,192,.06);border:1px solid rgba(0,229,192,.16);
+  display:flex;align-items:center;justify-content:center;
+  color:var(--fog);transition:all var(--t-fast);
+}
+.ft-soc-btn:hover{background:rgba(0,229,192,.14);border-color:var(--teal);color:var(--teal);transform:translateY(-2px)}
+.ft-soc-btn svg{width:17px;height:17px;fill:currentColor}
 .ft-c h4{font-family:var(--mn);font-size:.62rem;font-weight:500;letter-spacing:.16em;text-transform:uppercase;color:var(--fog2);margin-bottom:1.2rem}
 .ft-c ul{list-style:none}
 .ft-c ul li{margin-bottom:.6rem}
